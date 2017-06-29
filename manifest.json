@@ -1,0 +1,3812 @@
+﻿{
+	"@platforms": [
+		"android",
+		"iPhone",
+		"iPad"
+	],
+	"id": "H5BCE331D",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "commodityMall",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "1.0",/*应用版本名称*/
+		"code": ""
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "0_commodityMall_login/0001_index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": ""
+	},
+	"permissions": {
+		"Accelerometer": {
+			"description": "访问加速度感应器"
+		},
+		"Audio": {
+			"description": "访问麦克风"
+		},
+		"Messaging": {
+			"description": "短彩邮件插件"
+		},
+		"Cache": {
+			"description": "管理应用缓存"
+		},
+		"Camera": {
+			"description": "访问摄像头"
+		},
+		"Console": {
+			"description": "跟踪调试输出日志"
+		},
+		"Contacts": {
+			"description": "访问系统联系人信息"
+		},
+		"Device": {
+			"description": "访问设备信息"
+		},
+		"Downloader": {
+			"description": "文件下载管理"
+		},
+		"Events": {
+			"description": "应用扩展事件"
+		},
+		"File": {
+			"description": "访问本地文件系统"
+		},
+		"Gallery": {
+			"description": "访问系统相册"
+		},
+		"Geolocation": {
+			"description": "访问位置信息"
+		},
+		"Invocation": {
+			"description": "使用Native.js能力"
+		},
+		"Orientation": {
+			"description": "访问方向感应器"
+		},
+		"Proximity": {
+			"description": "访问距离感应器"
+		},
+		"Storage": {
+			"description": "管理应用本地数据"
+		},
+
+		"Uploader": {
+			"description": "管理文件上传任务"
+		},
+		"Runtime": {
+			"description": "访问运行期环境"
+		},
+		"XMLHttpRequest": {
+			"description": "跨域网络访问"
+		},
+		"Zip": {
+			"description": "文件压缩与解压缩"
+		},
+		"Barcode": {
+			"description": "管理二维码扫描插件"
+		},
+		"Maps": {
+			"description": "管理地图插件"
+		},
+		"Speech": {
+			"description": "管理语音识别插件"
+		},
+		"Webview": {
+			"description": "窗口管理"
+		},
+		"NativeUI": {
+			"description": "原生UI控件"
+		},
+		"Navigator": {
+			"description": "浏览器信息"
+		},
+		"NativeObj": {
+			"description": "原生对象"
+		}
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": false
+		},
+		"popGesture": "close",/*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
+		"runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": [
+					"<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+					"<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+					"<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+					"<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.CAMERA\"/>",
+					"<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+					"<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+					"<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+					"<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+					"<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+					"<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+					"<uses-feature android:name=\"android.hardware.camera\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+				]
+			},
+			"orientation": [
+				"portrait-primary"
+			],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					"auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "unpackage/res/icons/57x57.png", /*iPhone3/3GS程序图标，分辨率：57x57*/
+						"retina": "unpackage/res/icons/114x114.png", /*iPhone4程序图标，分辨率：114x114*/
+						"retina7": "unpackage/res/icons/120x120.png", /*iPhone4S/5/6程序图标，分辨率：120x120*/
+						"retina8": "unpackage/res/icons/180x180.png", /*iPhone6 Plus程序图标，分辨率：180x180*/
+						"spotlight-normal": "unpackage/res/icons/29x29.png", /*iPhone3/3GS Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "unpackage/res/icons/58x58.png", /*iPhone4 Spotlight搜索程序图标，分辨率：58x58*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png", /*iPhone4S/5/6 Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png", /*iPhone4设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png", /*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
+						"settings-retina8": "unpackage/res/icons/87x87.png"
+					},
+					"ipad": {
+						"normal": "unpackage/res/icons/72x72.png", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "unpackage/res/icons/144x144.png", /*iPad高分屏程序图标，分辨率：144x144*/
+						"normal7": "unpackage/res/icons/76x76.png", /*iPad iOS7程序图标，分辨率：76x76*/
+						"retina7": "unpackage/res/icons/152x152.png", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "unpackage/res/icons/50x50.png", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "unpackage/res/icons/100x100.png", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						"spotlight-normal7": "unpackage/res/icons/40x40.png",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png",/*iPad设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png"
+					}
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png",
+					"xxxhdpi": "unpackage/res/icons/192x192.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": "D:/【sunmei】/【program】/3、中国日用品商城/UI效果图/启动页.png",/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
+						"retina47": "D:/【sunmei】/【program】/3、中国日用品商城/UI效果图/启动页.png",/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
+						"retina55": "D:/【sunmei】/【program】/3、中国日用品商城/UI效果图/启动页.png",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
+						"retina55l": "D:/【sunmei】/【program】/3、中国日用品商城/UI效果图/启动页.png"
+					},
+					"ipad": {
+						"portrait": "D:/【sunmei】/【program】/3、中国日用品商城/UI效果图/启动页.png", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "D:/【sunmei】/【program】/3、中国日用品商城/UI效果图/启动页.png",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "D:/【sunmei】/【program】/3、中国日用品商城/UI效果图/启动页.png", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "D:/【sunmei】/【program】/3、中国日用品商城/UI效果图/启动页.png", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "D:/【sunmei】/【program】/3、中国日用品商城/UI效果图/启动页.png", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "D:/【sunmei】/【program】/3、中国日用品商城/UI效果图/启动页.png",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "D:/【sunmei】/【program】/3、中国日用品商城/UI效果图/启动页.png", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": "D:/【sunmei】/【program】/3、中国日用品商城/UI效果图/启动页.png"
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "D:/【sunmei】/【program】/3、中国日用品商城/UI效果图/启动页.png", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "D:/【sunmei】/【program】/3、中国日用品商城/UI效果图/启动页.png", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": "D:/【sunmei】/【program】/3、中国日用品商城/UI效果图/启动页.png"
+				}
+			}
+		}
+	},
+	"dependencies": {
+		"pages": {
+			"1_commodityMail_marketer/1200_settledApply.html": {
+				"href": "1_commodityMail_marketer/1200_settledApply.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/mui.picker.css",
+					"1_commodityMail_marketer/static/css/mui.poppicker.css",
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/mui.min.js",
+					"1_commodityMail_marketer/static/js/mui.picker.min.js",
+					"1_commodityMail_marketer/static/js/sorts.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/img/deleicon.png",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/img/head.png",
+					"1_commodityMail_marketer/static/img/waiting.gif"
+				],
+				"refer": [
+					"0_commodityMall_login/0001_index.html",
+					"0_commodityMall_login/0004_selectIdentity.html"
+				],
+				"priority": 0
+			},
+			"0_commodityMall_login/0005_identityVerify.html": {
+				"href": "0_commodityMall_login/0005_identityVerify.html",
+				"resources": [
+					"0_commodityMall_login/static/css/mui.picker.css",
+					"0_commodityMall_login/static/css/mui.poppicker.css",
+					"0_commodityMall_login/static/css/bootstrap.min.css",
+					"0_commodityMall_login/static/iconfont/iconfont.css",
+					"0_commodityMall_login/static/iconfont/iconfont.eot",
+					"0_commodityMall_login/static/iconfont/iconfont.woff",
+					"0_commodityMall_login/static/iconfont/iconfont.ttf",
+					"0_commodityMall_login/static/iconfont/iconfont.svg",
+					"0_commodityMall_login/static/css/login.css",
+					"0_commodityMall_login/static/img/btn.png",
+					"0_commodityMall_login/static/js/jquery-1.12.4.min.js",
+					"0_commodityMall_login/static/js/mui.min.js",
+					"0_commodityMall_login/static/js/mui.picker.min.js",
+					"0_commodityMall_login/static/js/sorts.js",
+					"0_commodityMall_login/static/js/bootstrap.min.js",
+					"0_commodityMall_login/static/js/login.js"
+				],
+				"refer": [
+					"0_commodityMall_login/0004_selectIdentity.html"
+				],
+				"priority": 1
+			},
+			"5_commodityMall_weChat/5230_wantedDetails.html": {
+				"href": "5_commodityMall_weChat/5230_wantedDetails.html",
+				"resources": [
+					"5_commodityMall_weChat/static/css/bootstrap.min.css",
+					"5_commodityMall_weChat/static/css/weCaat1.css",
+					"5_commodityMall_weChat/static/img/bg.png",
+					"5_commodityMall_weChat/static/iconfont/iconfont.css",
+					"5_commodityMall_weChat/static/iconfont/iconfont.eot",
+					"5_commodityMall_weChat/static/iconfont/iconfont.woff",
+					"5_commodityMall_weChat/static/iconfont/iconfont.ttf",
+					"5_commodityMall_weChat/static/iconfont/iconfont.svg",
+					"5_commodityMall_weChat/static/js/jquery-1.12.4.min.js",
+					"5_commodityMall_weChat/static/js/bootstrap.min.js",
+					"5_commodityMall_weChat/static/js/wechat.js",
+					"5_commodityMall_weChat/static/img/deleicon.png"
+				],
+				"priority": 2
+			},
+			"5_commodityMall_weChat/5240_findShop.html": {
+				"href": "5_commodityMall_weChat/5240_findShop.html",
+				"resources": [
+					"5_commodityMall_weChat/static/css/bootstrap.min.css",
+					"5_commodityMall_weChat/static/css/weCaat1.css",
+					"5_commodityMall_weChat/static/img/bg.png",
+					"5_commodityMall_weChat/static/iconfont/iconfont.css",
+					"5_commodityMall_weChat/static/iconfont/iconfont.eot",
+					"5_commodityMall_weChat/static/iconfont/iconfont.woff",
+					"5_commodityMall_weChat/static/iconfont/iconfont.ttf",
+					"5_commodityMall_weChat/static/iconfont/iconfont.svg",
+					"5_commodityMall_weChat/static/css/honeySwitch.css",
+					"5_commodityMall_weChat/static/js/jquery-1.12.4.min.js",
+					"5_commodityMall_weChat/static/js/bootstrap.js",
+					"5_commodityMall_weChat/static/js/honeySwitch.js",
+					"5_commodityMall_weChat/static/js/wechat.js"
+				],
+				"refer": [
+					"5_commodityMall_weChat/5220_releaseWantedinfo.html"
+				],
+				"priority": 3
+			},
+			"5_commodityMall_weChat/5220_releaseWantedinfo.html": {
+				"href": "5_commodityMall_weChat/5220_releaseWantedinfo.html",
+				"resources": [
+					"5_commodityMall_weChat/static/css/bootstrap.min.css",
+					"5_commodityMall_weChat/static/css/weCaat1.css",
+					"5_commodityMall_weChat/static/img/bg.png",
+					"5_commodityMall_weChat/static/iconfont/iconfont.css",
+					"5_commodityMall_weChat/static/iconfont/iconfont.eot",
+					"5_commodityMall_weChat/static/iconfont/iconfont.woff",
+					"5_commodityMall_weChat/static/iconfont/iconfont.ttf",
+					"5_commodityMall_weChat/static/iconfont/iconfont.svg",
+					"5_commodityMall_weChat/static/js/jquery-1.12.4.min.js",
+					"5_commodityMall_weChat/static/js/bootstrap.js",
+					"5_commodityMall_weChat/static/js/wechat.js"
+				],
+				"refer": [
+					"5_commodityMall_weChat/5230_wantedDetails.html",
+					"5_commodityMall_weChat/5240_findShop.html"
+				],
+				"priority": 2
+			},
+			"5_commodityMall_weChat/5310shopUnitsInfo.html": {
+				"href": "5_commodityMall_weChat/5310shopUnitsInfo.html",
+				"resources": [
+					"5_commodityMall_weChat/static/css/bootstrap.min.css",
+					"5_commodityMall_weChat/static/css/weCaat1.css",
+					"5_commodityMall_weChat/static/img/bg.png",
+					"5_commodityMall_weChat/static/iconfont/iconfont.css",
+					"5_commodityMall_weChat/static/iconfont/iconfont.eot",
+					"5_commodityMall_weChat/static/iconfont/iconfont.woff",
+					"5_commodityMall_weChat/static/iconfont/iconfont.ttf",
+					"5_commodityMall_weChat/static/iconfont/iconfont.svg",
+					"5_commodityMall_weChat/static/css/LArea.css",
+					"5_commodityMall_weChat/static/js/jquery-1.12.4.js",
+					"5_commodityMall_weChat/static/js/bootstrap.js",
+					"5_commodityMall_weChat/static/js/wechat.js"
+				],
+				"priority": 3
+			},
+			"5_commodityMall_weChat/5330_recruitmentDetails2.html": {
+				"href": "5_commodityMall_weChat/5330_recruitmentDetails2.html",
+				"resources": [
+					"5_commodityMall_weChat/static/css/bootstrap.min.css",
+					"5_commodityMall_weChat/static/css/weCaat1.css",
+					"5_commodityMall_weChat/static/img/bg.png",
+					"5_commodityMall_weChat/static/iconfont/iconfont.css",
+					"5_commodityMall_weChat/static/iconfont/iconfont.eot",
+					"5_commodityMall_weChat/static/iconfont/iconfont.woff",
+					"5_commodityMall_weChat/static/iconfont/iconfont.ttf",
+					"5_commodityMall_weChat/static/iconfont/iconfont.svg",
+					"5_commodityMall_weChat/static/css/honeySwitch.css",
+					"5_commodityMall_weChat/static/js/jquery-1.12.4.min.js",
+					"5_commodityMall_weChat/static/js/bootstrap.js",
+					"5_commodityMall_weChat/static/js/wechat.js",
+					"5_commodityMall_weChat/static/img/icon11_1.png",
+					"5_commodityMall_weChat/static/img/icon11.png",
+					"5_commodityMall_weChat/static/img/icon1.png"
+				],
+				"refer": [
+					"5_commodityMall_weChat/5340_resumeDropRecords.html"
+				],
+				"priority": 4
+			},
+			"5_commodityMall_weChat/5340_resumeDropRecords.html": {
+				"href": "5_commodityMall_weChat/5340_resumeDropRecords.html",
+				"resources": [
+					"5_commodityMall_weChat/static/css/bootstrap.min.css",
+					"5_commodityMall_weChat/static/css/weCaat1.css",
+					"5_commodityMall_weChat/static/img/bg.png",
+					"5_commodityMall_weChat/static/iconfont/iconfont.css",
+					"5_commodityMall_weChat/static/iconfont/iconfont.eot",
+					"5_commodityMall_weChat/static/iconfont/iconfont.woff",
+					"5_commodityMall_weChat/static/iconfont/iconfont.ttf",
+					"5_commodityMall_weChat/static/iconfont/iconfont.svg",
+					"5_commodityMall_weChat/static/js/jquery-1.12.4.min.js",
+					"5_commodityMall_weChat/static/js/bootstrap.min.js",
+					"5_commodityMall_weChat/static/js/wechat.js"
+				],
+				"refer": [
+					"5_commodityMall_weChat/5310shopUnitsInfo.html",
+					"5_commodityMall_weChat/5330_recruitmentDetails2.html"
+				],
+				"priority": 3
+			},
+			"5_commodityMall_weChat/5300_recruitmentSquare.html": {
+				"href": "5_commodityMall_weChat/5300_recruitmentSquare.html",
+				"resources": [
+					"5_commodityMall_weChat/static/css/bootstrap.min.css",
+					"5_commodityMall_weChat/static/css/weCaat1.css",
+					"5_commodityMall_weChat/static/img/bg.png",
+					"5_commodityMall_weChat/static/iconfont/iconfont.css",
+					"5_commodityMall_weChat/static/iconfont/iconfont.eot",
+					"5_commodityMall_weChat/static/iconfont/iconfont.woff",
+					"5_commodityMall_weChat/static/iconfont/iconfont.ttf",
+					"5_commodityMall_weChat/static/iconfont/iconfont.svg",
+					"5_commodityMall_weChat/static/js/jquery-1.12.4.min.js",
+					"5_commodityMall_weChat/static/js/bootstrap.min.js",
+					"5_commodityMall_weChat/static/js/wechat.js"
+				],
+				"refer": [
+					"5_commodityMall_weChat/5330_recruitmentDetails2.html"
+				],
+				"priority": 4
+			},
+			"5_commodityMall_weChat/5210_leaseDetails.html": {
+				"href": "5_commodityMall_weChat/5210_leaseDetails.html",
+				"resources": [
+					"5_commodityMall_weChat/static/css/bootstrap.min.css",
+					"5_commodityMall_weChat/static/css/weCaat1.css",
+					"5_commodityMall_weChat/static/img/bg.png",
+					"5_commodityMall_weChat/static/iconfont/iconfont.css",
+					"5_commodityMall_weChat/static/iconfont/iconfont.eot",
+					"5_commodityMall_weChat/static/iconfont/iconfont.woff",
+					"5_commodityMall_weChat/static/iconfont/iconfont.ttf",
+					"5_commodityMall_weChat/static/iconfont/iconfont.svg",
+					"5_commodityMall_weChat/static/css/honeySwitch.css",
+					"5_commodityMall_weChat/static/js/jquery-1.12.4.min.js",
+					"5_commodityMall_weChat/static/js/bootstrap.min.js",
+					"5_commodityMall_weChat/static/js/honeySwitch.js",
+					"5_commodityMall_weChat/static/js/wechat.js",
+					"5_commodityMall_weChat/static/js/hammer.min.js",
+					"5_commodityMall_weChat/static/img/icon11_1.png",
+					"5_commodityMall_weChat/static/img/icon11.png",
+					"5_commodityMall_weChat/static/img/icon7.png",
+					"5_commodityMall_weChat/static/img/ad1-1.jpg",
+					"5_commodityMall_weChat/static/img/ad1-2.jpg",
+					"5_commodityMall_weChat/static/img/ad1-3.jpg",
+					"5_commodityMall_weChat/static/img/ad1-4.jpg",
+					"5_commodityMall_weChat/static/img/ad1-5.jpg"
+				],
+				"priority": 6
+			},
+			"5_commodityMall_weChat/5200_infoSquare.html": {
+				"href": "5_commodityMall_weChat/5200_infoSquare.html",
+				"resources": [
+					"5_commodityMall_weChat/static/css/bootstrap.min.css",
+					"5_commodityMall_weChat/static/css/weCaat1.css",
+					"5_commodityMall_weChat/static/img/bg.png",
+					"5_commodityMall_weChat/static/iconfont/iconfont.css",
+					"5_commodityMall_weChat/static/iconfont/iconfont.eot",
+					"5_commodityMall_weChat/static/iconfont/iconfont.woff",
+					"5_commodityMall_weChat/static/iconfont/iconfont.ttf",
+					"5_commodityMall_weChat/static/iconfont/iconfont.svg",
+					"5_commodityMall_weChat/static/css/dropload.css",
+					"5_commodityMall_weChat/static/js/jquery-1.12.4.min.js",
+					"5_commodityMall_weChat/static/js/bootstrap.js",
+					"5_commodityMall_weChat/static/js/wechat.js",
+					"5_commodityMall_weChat/static/js/dropload.min.js"
+				],
+				"refer": [
+					"5_commodityMall_weChat/5210_leaseDetails.html",
+					"5_commodityMall_weChat/5240_findShop.html"
+				],
+				"priority": 6
+			},
+			"5_commodityMall_weChat/5360_modResume.html": {
+				"href": "5_commodityMall_weChat/5360_modResume.html",
+				"resources": [
+					"5_commodityMall_weChat/static/css/bootstrap.min.css",
+					"5_commodityMall_weChat/static/css/weCaat1.css",
+					"5_commodityMall_weChat/static/img/bg.png",
+					"5_commodityMall_weChat/static/iconfont/iconfont.css",
+					"5_commodityMall_weChat/static/iconfont/iconfont.eot",
+					"5_commodityMall_weChat/static/iconfont/iconfont.woff",
+					"5_commodityMall_weChat/static/iconfont/iconfont.ttf",
+					"5_commodityMall_weChat/static/iconfont/iconfont.svg",
+					"5_commodityMall_weChat/static/css/mui.picker.css",
+					"5_commodityMall_weChat/static/css/mui.poppicker.css",
+					"5_commodityMall_weChat/static/js/jquery-1.12.4.js",
+					"5_commodityMall_weChat/static/js/bootstrap.js",
+					"5_commodityMall_weChat/static/js/DatePicker.js",
+					"5_commodityMall_weChat/static/js/mui.min.js",
+					"5_commodityMall_weChat/static/js/mui.picker.min.js",
+					"5_commodityMall_weChat/static/js/sorts.js",
+					"5_commodityMall_weChat/static/js/wechat.js",
+					"5_commodityMall_weChat/static/js/wechateach.js"
+				],
+				"priority": 7
+			},
+			"5_commodityMall_weChat/5360_newResume.html": {
+				"href": "5_commodityMall_weChat/5360_newResume.html",
+				"resources": [
+					"5_commodityMall_weChat/static/css/bootstrap.min.css",
+					"5_commodityMall_weChat/static/css/weCaat1.css",
+					"5_commodityMall_weChat/static/img/bg.png",
+					"5_commodityMall_weChat/static/iconfont/iconfont.css",
+					"5_commodityMall_weChat/static/iconfont/iconfont.eot",
+					"5_commodityMall_weChat/static/iconfont/iconfont.woff",
+					"5_commodityMall_weChat/static/iconfont/iconfont.ttf",
+					"5_commodityMall_weChat/static/iconfont/iconfont.svg",
+					"5_commodityMall_weChat/static/css/mui.picker.css",
+					"5_commodityMall_weChat/static/css/mui.poppicker.css",
+					"5_commodityMall_weChat/static/js/jquery-1.12.4.js",
+					"5_commodityMall_weChat/static/js/bootstrap.js",
+					"5_commodityMall_weChat/static/js/DatePicker.js",
+					"5_commodityMall_weChat/static/js/mui.min.js",
+					"5_commodityMall_weChat/static/js/mui.picker.min.js",
+					"5_commodityMall_weChat/static/js/sorts.js",
+					"5_commodityMall_weChat/static/js/wechat.js",
+					"5_commodityMall_weChat/static/js/wechateach.js"
+				],
+				"priority": 8
+			},
+			"5_commodityMall_weChat/5350_resumeDetails.html": {
+				"href": "5_commodityMall_weChat/5350_resumeDetails.html",
+				"resources": [
+					"5_commodityMall_weChat/static/css/bootstrap.min.css",
+					"5_commodityMall_weChat/static/css/weCaat1.css",
+					"5_commodityMall_weChat/static/img/bg.png",
+					"5_commodityMall_weChat/static/iconfont/iconfont.css",
+					"5_commodityMall_weChat/static/iconfont/iconfont.eot",
+					"5_commodityMall_weChat/static/iconfont/iconfont.woff",
+					"5_commodityMall_weChat/static/iconfont/iconfont.ttf",
+					"5_commodityMall_weChat/static/iconfont/iconfont.svg",
+					"5_commodityMall_weChat/static/css/honeySwitch.css",
+					"5_commodityMall_weChat/static/js/jquery-1.12.4.min.js",
+					"5_commodityMall_weChat/static/js/bootstrap.js",
+					"5_commodityMall_weChat/static/js/honeySwitch.js",
+					"5_commodityMall_weChat/static/js/wechat.js",
+					"5_commodityMall_weChat/img/icon4_1.png",
+					"5_commodityMall_weChat/img/icon4.png",
+					"5_commodityMall_weChat/img/icon1.png",
+					"5_commodityMall_weChat/img/icon2.png",
+					"5_commodityMall_weChat/img/icon3.png"
+				],
+				"refer": [
+					"5_commodityMall_weChat/5360_modResume.html",
+					"5_commodityMall_weChat/5360_newResume.html"
+				],
+				"priority": 7
+			},
+			"5_commodityMall_weChat/5130_myinfo.html": {
+				"href": "5_commodityMall_weChat/5130_myinfo.html",
+				"resources": [
+					"5_commodityMall_weChat/static/css/bootstrap.min.css",
+					"5_commodityMall_weChat/static/css/weCaat1.css",
+					"5_commodityMall_weChat/static/img/bg.png",
+					"5_commodityMall_weChat/static/iconfont/iconfont.css",
+					"5_commodityMall_weChat/static/iconfont/iconfont.eot",
+					"5_commodityMall_weChat/static/iconfont/iconfont.woff",
+					"5_commodityMall_weChat/static/iconfont/iconfont.ttf",
+					"5_commodityMall_weChat/static/iconfont/iconfont.svg",
+					"5_commodityMall_weChat/static/css/mui.picker.css",
+					"5_commodityMall_weChat/static/css/mui.poppicker.css",
+					"5_commodityMall_weChat/static/js/jquery-1.12.4.js",
+					"5_commodityMall_weChat/static/js/mui.min.js",
+					"5_commodityMall_weChat/static/js/mui.picker.min.js",
+					"5_commodityMall_weChat/static/js/bootstrap.js",
+					"5_commodityMall_weChat/static/js/sorts.js",
+					"5_commodityMall_weChat/static/js/DatePicker.js",
+					"5_commodityMall_weChat/static/js/wechat.js"
+				],
+				"refer": [
+					"5_commodityMall_weChat/5100_my.html"
+				],
+				"priority": 10
+			},
+			"5_commodityMall_weChat/5120_mycollectrecruitinfo.html": {
+				"href": "5_commodityMall_weChat/5120_mycollectrecruitinfo.html",
+				"resources": [
+					"5_commodityMall_weChat/static/css/bootstrap.min.css",
+					"5_commodityMall_weChat/static/css/weCaat1.css",
+					"5_commodityMall_weChat/static/img/bg.png",
+					"5_commodityMall_weChat/static/iconfont/iconfont.css",
+					"5_commodityMall_weChat/static/iconfont/iconfont.eot",
+					"5_commodityMall_weChat/static/iconfont/iconfont.woff",
+					"5_commodityMall_weChat/static/iconfont/iconfont.ttf",
+					"5_commodityMall_weChat/static/iconfont/iconfont.svg",
+					"5_commodityMall_weChat/static/css/honeySwitch.css",
+					"5_commodityMall_weChat/static/js/jquery-1.12.4.min.js",
+					"5_commodityMall_weChat/static/js/bootstrap.js",
+					"5_commodityMall_weChat/static/js/honeySwitch.js",
+					"5_commodityMall_weChat/static/js/wechat.js"
+				],
+				"refer": [
+					"5_commodityMall_weChat/5330_recruitmentDetails2.html"
+				],
+				"priority": 11
+			},
+			"0_commodityMall_login/0002_resetPassword.html": {
+				"href": "0_commodityMall_login/0002_resetPassword.html",
+				"resources": [
+					"0_commodityMall_login/static/css/bootstrap.min.css",
+					"0_commodityMall_login/static/iconfont/iconfont.css",
+					"0_commodityMall_login/static/iconfont/iconfont.eot",
+					"0_commodityMall_login/static/iconfont/iconfont.woff",
+					"0_commodityMall_login/static/iconfont/iconfont.ttf",
+					"0_commodityMall_login/static/iconfont/iconfont.svg",
+					"0_commodityMall_login/static/css/login.css",
+					"0_commodityMall_login/static/img/btn.png",
+					"0_commodityMall_login/static/js/jquery-1.12.4.min.js",
+					"0_commodityMall_login/static/js/bootstrap.min.js",
+					"0_commodityMall_login/static/js/sj_validate.js",
+					"0_commodityMall_login/static/js/login.js"
+				],
+				"refer": [
+					"0_commodityMall_login/0001_index.html"
+				],
+				"priority": 13
+			},
+			"1_commodityMail_marketer/1190_aboutUs.html": {
+				"href": "1_commodityMail_marketer/1190_aboutUs.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"priority": 14
+			},
+			"1_commodityMail_marketer/11A0_setUp.html": {
+				"href": "1_commodityMail_marketer/11A0_setUp.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"refer": [
+					"0_commodityMall_login/0001_index.html",
+					"0_commodityMall_login/0002_resetPassword.html",
+					"1_commodityMail_marketer/1190_aboutUs.html"
+				],
+				"priority": 12
+			},
+			"5_commodityMall_weChat/5110_mycollectshopinfo.html": {
+				"href": "5_commodityMall_weChat/5110_mycollectshopinfo.html",
+				"resources": [
+					"5_commodityMall_weChat/static/css/bootstrap.min.css",
+					"5_commodityMall_weChat/static/css/weCaat1.css",
+					"5_commodityMall_weChat/static/img/bg.png",
+					"5_commodityMall_weChat/static/iconfont/iconfont.css",
+					"5_commodityMall_weChat/static/iconfont/iconfont.eot",
+					"5_commodityMall_weChat/static/iconfont/iconfont.woff",
+					"5_commodityMall_weChat/static/iconfont/iconfont.ttf",
+					"5_commodityMall_weChat/static/iconfont/iconfont.svg",
+					"5_commodityMall_weChat/static/js/jquery-1.12.4.min.js",
+					"5_commodityMall_weChat/static/js/bootstrap.js",
+					"5_commodityMall_weChat/static/js/wechat.js"
+				],
+				"refer": [
+					"5_commodityMall_weChat/5210_leaseDetails.html"
+				],
+				"priority": 14
+			},
+			"5_commodityMall_weChat/5100_my.html": {
+				"href": "5_commodityMall_weChat/5100_my.html",
+				"resources": [
+					"5_commodityMall_weChat/static/css/bootstrap.min.css",
+					"5_commodityMall_weChat/static/css/style.css",
+					"5_commodityMall_weChat/static/img/addpic.png",
+					"5_commodityMall_weChat/static/css/weCaat1.css",
+					"5_commodityMall_weChat/static/img/bg.png",
+					"5_commodityMall_weChat/static/iconfont/iconfont.css",
+					"5_commodityMall_weChat/static/iconfont/iconfont.eot",
+					"5_commodityMall_weChat/static/iconfont/iconfont.woff",
+					"5_commodityMall_weChat/static/iconfont/iconfont.ttf",
+					"5_commodityMall_weChat/static/iconfont/iconfont.svg",
+					"5_commodityMall_weChat/static/js/jquery-1.12.4.min.js",
+					"5_commodityMall_weChat/static/js/bootstrap.js",
+					"5_commodityMall_weChat/static/js/public.js",
+					"5_commodityMall_weChat/static/img/deleicon.png",
+					"5_commodityMall_weChat/static/js/wechat.js",
+					"5_commodityMall_weChat/static/js/wechateach.js",
+					"5_commodityMall_weChat/static/img/icon3.png",
+					"5_commodityMall_weChat/static/img/icon4.png",
+					"5_commodityMall_weChat/static/img/12.png",
+					"5_commodityMall_weChat/static/img/icon3_1.png"
+				],
+				"refer": [
+					"0_commodityMall_login/0004_selectIdentity.html",
+					"1_commodityMail_marketer/1200_settledApply.html",
+					"5_commodityMall_weChat/5130_myinfo.html",
+					"5_commodityMall_weChat/5120_mycollectrecruitinfo.html",
+					"1_commodityMail_marketer/11A0_setUp.html",
+					"5_commodityMall_weChat/5000_index.html",
+					"5_commodityMall_weChat/5110_mycollectshopinfo.html"
+				],
+				"priority": 8
+			},
+			"5_commodityMall_weChat/5000_index.html": {
+				"href": "5_commodityMall_weChat/5000_index.html",
+				"resources": [
+					"5_commodityMall_weChat/static/js/hammer.min.js",
+					"5_commodityMall_weChat/static/css/bootstrap.css",
+					"5_commodityMall_weChat/static/css/style.css",
+					"5_commodityMall_weChat/static/img/addpic.png",
+					"5_commodityMall_weChat/static/css/weCaat1.css",
+					"5_commodityMall_weChat/static/img/bg.png",
+					"5_commodityMall_weChat/static/iconfont/iconfont.css",
+					"5_commodityMall_weChat/static/iconfont/iconfont.eot",
+					"5_commodityMall_weChat/static/iconfont/iconfont.woff",
+					"5_commodityMall_weChat/static/iconfont/iconfont.ttf",
+					"5_commodityMall_weChat/static/iconfont/iconfont.svg",
+					"5_commodityMall_weChat/static/iconfont-1/iconfont.css",
+					"5_commodityMall_weChat/static/iconfont-1/iconfont.eot",
+					"5_commodityMall_weChat/static/iconfont-1/iconfont.woff",
+					"5_commodityMall_weChat/static/iconfont-1/iconfont.ttf",
+					"5_commodityMall_weChat/static/iconfont-1/iconfont.svg",
+					"5_commodityMall_weChat/static/iconfont-2/iconfont.css",
+					"5_commodityMall_weChat/static/iconfont-2/iconfont.eot",
+					"5_commodityMall_weChat/static/iconfont-2/iconfont.woff",
+					"5_commodityMall_weChat/static/iconfont-2/iconfont.ttf",
+					"5_commodityMall_weChat/static/iconfont-2/iconfont.svg",
+					"5_commodityMall_weChat/static/js/jquery-1.12.4.js",
+					"5_commodityMall_weChat/static/js/bootstrap.js",
+					"5_commodityMall_weChat/static/js/marketer.js",
+					"5_commodityMall_weChat/static/js/scrollForever.min.js",
+					"5_commodityMall_weChat/static/js/dropload.min.js",
+					"5_commodityMall_weChat/static/js/wechat.js",
+					"5_commodityMall_weChat/static/img/icon1_1.png",
+					"5_commodityMall_weChat/static/img/ad1-1.jpg",
+					"5_commodityMall_weChat/static/img/ad1-2.jpg",
+					"5_commodityMall_weChat/static/img/ad1-3.jpg",
+					"5_commodityMall_weChat/static/img/ad1-4.jpg",
+					"5_commodityMall_weChat/static/img/ad1-5.jpg"
+				],
+				"refer": [
+					"5_commodityMall_weChat/5220_releaseWantedinfo.html",
+					"5_commodityMall_weChat/5340_resumeDropRecords.html",
+					"5_commodityMall_weChat/5300_recruitmentSquare.html",
+					"5_commodityMall_weChat/5240_findShop.html",
+					"5_commodityMall_weChat/5200_infoSquare.html",
+					"5_commodityMall_weChat/5350_resumeDetails.html",
+					"5_commodityMall_weChat/5100_my.html",
+					"5_commodityMall_weChat/5000_index.html"
+				],
+				"priority": 2
+			},
+			"0_commodityMall_login/0004_selectIdentity.html": {
+				"href": "0_commodityMall_login/0004_selectIdentity.html",
+				"resources": [
+					"0_commodityMall_login/static/css/bootstrap.min.css",
+					"0_commodityMall_login/static/iconfont/iconfont.css",
+					"0_commodityMall_login/static/iconfont/iconfont.eot",
+					"0_commodityMall_login/static/iconfont/iconfont.woff",
+					"0_commodityMall_login/static/iconfont/iconfont.ttf",
+					"0_commodityMall_login/static/iconfont/iconfont.svg",
+					"0_commodityMall_login/static/css/login.css",
+					"0_commodityMall_login/static/img/btn.png",
+					"0_commodityMall_login/static/js/jquery-1.12.4.min.js",
+					"0_commodityMall_login/static/js/bootstrap.min.js",
+					"0_commodityMall_login/static/js/login.js"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1200_settledApply.html",
+					"0_commodityMall_login/0005_identityVerify.html",
+					"5_commodityMall_weChat/5000_index.html",
+					"0_commodityMall_login/0004_selectIdentity.html"
+				],
+				"priority": 0
+			},
+			"3_commodityMall_engineering/3311_addTeammates.html": {
+				"href": "3_commodityMall_engineering/3311_addTeammates.html",
+				"resources": [
+					"3_commodityMall_engineering/static/css/bootstrap.min.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.eot",
+					"3_commodityMall_engineering/static/iconfont/iconfont.woff",
+					"3_commodityMall_engineering/static/iconfont/iconfont.ttf",
+					"3_commodityMall_engineering/static/iconfont/iconfont.svg",
+					"3_commodityMall_engineering/static/css/engineering.css",
+					"3_commodityMall_engineering/static/img/bg.png",
+					"3_commodityMall_engineering/static/img/icon17.png",
+					"3_commodityMall_engineering/static/img/icon17_1.png",
+					"3_commodityMall_engineering/static/img/addpic2.png",
+					"3_commodityMall_engineering/static/js/jquery-1.12.4.min.js",
+					"3_commodityMall_engineering/static/js/bootstrap.min.js",
+					"3_commodityMall_engineering/static/js/public.js",
+					"3_commodityMall_engineering/static/js/engineering.js"
+				],
+				"priority": 7
+			},
+			"3_commodityMall_engineering/3310_myTeammates.html": {
+				"href": "3_commodityMall_engineering/3310_myTeammates.html",
+				"resources": [
+					"3_commodityMall_engineering/static/css/bootstrap.min.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.eot",
+					"3_commodityMall_engineering/static/iconfont/iconfont.woff",
+					"3_commodityMall_engineering/static/iconfont/iconfont.ttf",
+					"3_commodityMall_engineering/static/iconfont/iconfont.svg",
+					"3_commodityMall_engineering/static/css/engineering.css",
+					"3_commodityMall_engineering/static/img/bg.png",
+					"3_commodityMall_engineering/static/img/icon17.png",
+					"3_commodityMall_engineering/static/img/icon17_1.png",
+					"3_commodityMall_engineering/static/img/addpic2.png",
+					"3_commodityMall_engineering/static/js/jquery-1.12.4.min.js",
+					"3_commodityMall_engineering/static/js/bootstrap.min.js",
+					"3_commodityMall_engineering/static/js/public.js",
+					"3_commodityMall_engineering/static/js/engineering.js"
+				],
+				"refer": [
+					"3_commodityMall_engineering/3311_addTeammates.html"
+				],
+				"priority": 7
+			},
+			"1_commodityMail_marketer/1720_passFeedback.html": {
+				"href": "1_commodityMail_marketer/1720_passFeedback.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/img/waiting.gif"
+				],
+				"priority": 8
+			},
+			"1_commodityMail_marketer/1730_repairSchedule.html": {
+				"href": "1_commodityMail_marketer/1730_repairSchedule.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"priority": 9
+			},
+			"1_commodityMail_marketer/1750_repairDetails.html": {
+				"href": "1_commodityMail_marketer/1750_repairDetails.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1720_passFeedback.html",
+					"1_commodityMail_marketer/1730_repairSchedule.html"
+				],
+				"priority": 8
+			},
+			"1_commodityMail_marketer/1760_suggestDetails.html": {
+				"href": "1_commodityMail_marketer/1760_suggestDetails.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/img/head.png"
+				],
+				"priority": 9
+			},
+			"1_commodityMail_marketer/1710_sthToSay.html": {
+				"href": "1_commodityMail_marketer/1710_sthToSay.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/switch.css",
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/js/switch.js",
+					"1_commodityMail_marketer/static/img/waiting.gif"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1700_responsiveCenter.html"
+				],
+				"priority": 10
+			},
+			"1_commodityMail_marketer/1780_complainDetails.html": {
+				"href": "1_commodityMail_marketer/1780_complainDetails.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/img/bg2.png",
+					"1_commodityMail_marketer/static/img/head.png"
+				],
+				"priority": 11
+			},
+			"1_commodityMail_marketer/1700_responsiveCenter.html": {
+				"href": "1_commodityMail_marketer/1700_responsiveCenter.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/dropload.css",
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/dropload.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/img/bg2.png"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1750_repairDetails.html",
+					"1_commodityMail_marketer/1760_suggestDetails.html",
+					"1_commodityMail_marketer/1710_sthToSay.html",
+					"1_commodityMail_marketer/1780_complainDetails.html"
+				],
+				"priority": 8
+			},
+			"1_commodityMail_marketer/1610_noticeDetail.html": {
+				"href": "1_commodityMail_marketer/1610_noticeDetail.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/img/bg2.png"
+				],
+				"priority": 9
+			},
+			"1_commodityMail_marketer/1600_noticePlatform.html": {
+				"href": "1_commodityMail_marketer/1600_noticePlatform.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/img/bg2.png"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1610_noticeDetail.html"
+				],
+				"priority": 9
+			},
+			"3_commodityMall_engineering/3300_mine.html": {
+				"href": "3_commodityMall_engineering/3300_mine.html",
+				"resources": [
+					"3_commodityMall_engineering/static/css/bootstrap.min.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.eot",
+					"3_commodityMall_engineering/static/iconfont/iconfont.woff",
+					"3_commodityMall_engineering/static/iconfont/iconfont.ttf",
+					"3_commodityMall_engineering/static/iconfont/iconfont.svg",
+					"3_commodityMall_engineering/static/css/engineering.css",
+					"3_commodityMall_engineering/static/img/bg.png",
+					"3_commodityMall_engineering/static/img/icon17.png",
+					"3_commodityMall_engineering/static/img/icon17_1.png",
+					"3_commodityMall_engineering/static/img/addpic2.png",
+					"3_commodityMall_engineering/static/js/jquery-1.12.4.min.js",
+					"3_commodityMall_engineering/static/js/bootstrap.min.js",
+					"3_commodityMall_engineering/static/js/public.js",
+					"3_commodityMall_engineering/static/js/engineering.js",
+					"3_commodityMall_engineering/static/img/waiting.gif",
+					"3_commodityMall_engineering/static/img/head.png",
+					"3_commodityMall_engineering/static/img/icon2_1.png",
+					"3_commodityMall_engineering/static/img/icon1.png",
+					"3_commodityMall_engineering/static/img/icon3.png",
+					"3_commodityMall_engineering/static/img/icon4.png",
+					"3_commodityMall_engineering/static/img/icon5.png",
+					"3_commodityMall_engineering/static/img/icon6.png",
+					"3_commodityMall_engineering/static/img/icon7_1.png"
+				],
+				"refer": [
+					"5_commodityMall_weChat/5130_myinfo.html",
+					"0_commodityMall_login/0004_selectIdentity.html",
+					"3_commodityMall_engineering/3310_myTeammates.html",
+					"1_commodityMail_marketer/1700_responsiveCenter.html",
+					"1_commodityMail_marketer/1600_noticePlatform.html",
+					"3_commodityMall_engineering/3120_sendCenter.html",
+					"3_commodityMall_engineering/3100_myOrder.html",
+					"3_commodityMall_engineering/3300_mine.html",
+					"1_commodityMail_marketer/11A0_setUp.html"
+				],
+				"priority": 5
+			},
+			"3_commodityMall_engineering/3100_myOrder.html": {
+				"href": "3_commodityMall_engineering/3100_myOrder.html",
+				"resources": [
+					"3_commodityMall_engineering/static/css/bootstrap.min.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.eot",
+					"3_commodityMall_engineering/static/iconfont/iconfont.woff",
+					"3_commodityMall_engineering/static/iconfont/iconfont.ttf",
+					"3_commodityMall_engineering/static/iconfont/iconfont.svg",
+					"3_commodityMall_engineering/static/css/engineering.css",
+					"3_commodityMall_engineering/static/img/bg.png",
+					"3_commodityMall_engineering/static/img/icon17.png",
+					"3_commodityMall_engineering/static/img/icon17_1.png",
+					"3_commodityMall_engineering/static/img/addpic2.png",
+					"3_commodityMall_engineering/static/js/jquery-1.12.4.min.js",
+					"3_commodityMall_engineering/static/js/bootstrap.min.js",
+					"3_commodityMall_engineering/static/js/public.js",
+					"3_commodityMall_engineering/static/js/engineering.js",
+					"3_commodityMall_engineering/static/img/repair.jpg",
+					"3_commodityMall_engineering/static/img/icon5.png",
+					"3_commodityMall_engineering/static/img/icon6_1.png",
+					"3_commodityMall_engineering/static/img/icon7.png"
+				],
+				"refer": [
+					"3_commodityMall_engineering/3110_faultDetails.html",
+					"3_commodityMall_engineering/3120_sendCenter.html",
+					"3_commodityMall_engineering/3100_myOrder.html",
+					"3_commodityMall_engineering/3300_mine.html"
+				],
+				"priority": 2
+			},
+			"3_commodityMall_engineering/3110_faultDetails.html": {
+				"href": "3_commodityMall_engineering/3110_faultDetails.html",
+				"resources": [
+					"3_commodityMall_engineering/static/css/bootstrap.min.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.eot",
+					"3_commodityMall_engineering/static/iconfont/iconfont.woff",
+					"3_commodityMall_engineering/static/iconfont/iconfont.ttf",
+					"3_commodityMall_engineering/static/iconfont/iconfont.svg",
+					"3_commodityMall_engineering/static/css/engineering.css",
+					"3_commodityMall_engineering/static/img/bg.png",
+					"3_commodityMall_engineering/static/img/icon17.png",
+					"3_commodityMall_engineering/static/img/icon17_1.png",
+					"3_commodityMall_engineering/static/img/addpic2.png",
+					"3_commodityMall_engineering/static/js/jquery-1.12.4.min.js",
+					"3_commodityMall_engineering/static/js/bootstrap.min.js",
+					"3_commodityMall_engineering/static/js/public.js",
+					"3_commodityMall_engineering/static/js/engineering.js"
+				],
+				"refer": [
+					"3_commodityMall_engineering/3100_myOrder.html",
+					"3_commodityMall_engineering/3120_sendCenter.html"
+				],
+				"priority": 2
+			},
+			"3_commodityMall_engineering/3120_sendCenter.html": {
+				"href": "3_commodityMall_engineering/3120_sendCenter.html",
+				"resources": [
+					"3_commodityMall_engineering/static/css/mui.min.css",
+					"3_commodityMall_engineering/static/fonts/mui.ttf",
+					"3_commodityMall_engineering/static/css/dropload.css",
+					"3_commodityMall_engineering/static/css/bootstrap.min.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.eot",
+					"3_commodityMall_engineering/static/iconfont/iconfont.woff",
+					"3_commodityMall_engineering/static/iconfont/iconfont.ttf",
+					"3_commodityMall_engineering/static/iconfont/iconfont.svg",
+					"3_commodityMall_engineering/static/css/engineering.css",
+					"3_commodityMall_engineering/static/img/bg.png",
+					"3_commodityMall_engineering/static/img/icon17.png",
+					"3_commodityMall_engineering/static/img/icon17_1.png",
+					"3_commodityMall_engineering/static/img/addpic2.png",
+					"3_commodityMall_engineering/static/js/jquery-1.12.4.min.js",
+					"3_commodityMall_engineering/static/js/dropload.min.js",
+					"3_commodityMall_engineering/static/js/bootstrap.min.js",
+					"3_commodityMall_engineering/static/js/public.js",
+					"3_commodityMall_engineering/static/img/deleicon.png",
+					"3_commodityMall_engineering/static/js/engineering.js",
+					"3_commodityMall_engineering/static/img/head.png",
+					"3_commodityMall_engineering/static/js/mui.min.js",
+					"3_commodityMall_engineering/static/img/icon5_1.png",
+					"3_commodityMall_engineering/static/img/icon6.png",
+					"3_commodityMall_engineering/static/img/icon7.png"
+				],
+				"refer": [
+					"0_commodityMall_login/0001_index.html",
+					"3_commodityMall_engineering/3110_faultDetails.html",
+					"3_commodityMall_engineering/3120_sendCenter.html",
+					"3_commodityMall_engineering/3100_myOrder.html",
+					"3_commodityMall_engineering/3300_mine.html"
+				],
+				"priority": 1
+			},
+			"3_commodityMall_engineering/3320_mine.html": {
+				"href": "3_commodityMall_engineering/3320_mine.html",
+				"resources": [
+					"3_commodityMall_engineering/static/css/bootstrap.min.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.eot",
+					"3_commodityMall_engineering/static/iconfont/iconfont.woff",
+					"3_commodityMall_engineering/static/iconfont/iconfont.ttf",
+					"3_commodityMall_engineering/static/iconfont/iconfont.svg",
+					"3_commodityMall_engineering/static/css/engineering.css",
+					"3_commodityMall_engineering/static/img/bg.png",
+					"3_commodityMall_engineering/static/img/icon17.png",
+					"3_commodityMall_engineering/static/img/icon17_1.png",
+					"3_commodityMall_engineering/static/img/addpic2.png",
+					"3_commodityMall_engineering/static/js/jquery-1.12.4.min.js",
+					"3_commodityMall_engineering/static/js/bootstrap.min.js",
+					"3_commodityMall_engineering/static/js/public.js",
+					"3_commodityMall_engineering/static/js/engineering.js",
+					"3_commodityMall_engineering/static/img/waiting.gif",
+					"3_commodityMall_engineering/static/img/head.png",
+					"3_commodityMall_engineering/static/img/icon2_1.png",
+					"3_commodityMall_engineering/static/img/icon3.png",
+					"3_commodityMall_engineering/static/img/icon4.png",
+					"3_commodityMall_engineering/static/img/icon5.png",
+					"3_commodityMall_engineering/static/img/icon6.png",
+					"3_commodityMall_engineering/static/img/icon7_1.png"
+				],
+				"refer": [
+					"5_commodityMall_weChat/5130_myinfo.html",
+					"0_commodityMall_login/0004_selectIdentity.html",
+					"1_commodityMail_marketer/1700_responsiveCenter.html",
+					"1_commodityMail_marketer/1600_noticePlatform.html",
+					"3_commodityMall_engineering/3210_receiveCenter.html",
+					"3_commodityMall_engineering/3200_myOrder.html",
+					"3_commodityMall_engineering/3320_mine.html",
+					"1_commodityMail_marketer/11A0_setUp.html"
+				],
+				"priority": 5
+			},
+			"3_commodityMall_engineering/3200_myOrder.html": {
+				"href": "3_commodityMall_engineering/3200_myOrder.html",
+				"resources": [
+					"3_commodityMall_engineering/static/css/bootstrap.min.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.eot",
+					"3_commodityMall_engineering/static/iconfont/iconfont.woff",
+					"3_commodityMall_engineering/static/iconfont/iconfont.ttf",
+					"3_commodityMall_engineering/static/iconfont/iconfont.svg",
+					"3_commodityMall_engineering/static/css/engineering.css",
+					"3_commodityMall_engineering/static/img/bg.png",
+					"3_commodityMall_engineering/static/img/icon17.png",
+					"3_commodityMall_engineering/static/img/icon17_1.png",
+					"3_commodityMall_engineering/static/img/addpic2.png",
+					"3_commodityMall_engineering/static/js/jquery-1.12.4.min.js",
+					"3_commodityMall_engineering/static/js/bootstrap.min.js",
+					"3_commodityMall_engineering/static/js/public.js",
+					"3_commodityMall_engineering/static/js/engineering.js",
+					"3_commodityMall_engineering/static/img/repair.jpg",
+					"3_commodityMall_engineering/static/img/icon5.png",
+					"3_commodityMall_engineering/static/img/icon6_1.png",
+					"3_commodityMall_engineering/static/img/icon7.png"
+				],
+				"refer": [
+					"3_commodityMall_engineering/3220_faultDetails.html",
+					"3_commodityMall_engineering/3210_receiveCenter.html",
+					"3_commodityMall_engineering/3200_myOrder.html",
+					"3_commodityMall_engineering/3320_mine.html"
+				],
+				"priority": 2
+			},
+			"3_commodityMall_engineering/3220_faultDetails.html": {
+				"href": "3_commodityMall_engineering/3220_faultDetails.html",
+				"resources": [
+					"3_commodityMall_engineering/static/css/bootstrap.min.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.eot",
+					"3_commodityMall_engineering/static/iconfont/iconfont.woff",
+					"3_commodityMall_engineering/static/iconfont/iconfont.ttf",
+					"3_commodityMall_engineering/static/iconfont/iconfont.svg",
+					"3_commodityMall_engineering/static/css/engineering.css",
+					"3_commodityMall_engineering/static/img/bg.png",
+					"3_commodityMall_engineering/static/img/icon17.png",
+					"3_commodityMall_engineering/static/img/icon17_1.png",
+					"3_commodityMall_engineering/static/img/addpic2.png",
+					"3_commodityMall_engineering/static/js/jquery-1.12.4.min.js",
+					"3_commodityMall_engineering/static/js/bootstrap.min.js",
+					"3_commodityMall_engineering/static/js/public.js",
+					"3_commodityMall_engineering/static/js/engineering.js",
+					"3_commodityMall_engineering/static/img/waiting.gif"
+				],
+				"refer": [
+					"3_commodityMall_engineering/3200_myOrder.html",
+					"3_commodityMall_engineering/3210_receiveCenter.html"
+				],
+				"priority": 2
+			},
+			"3_commodityMall_engineering/3210_receiveCenter.html": {
+				"href": "3_commodityMall_engineering/3210_receiveCenter.html",
+				"resources": [
+					"3_commodityMall_engineering/static/css/mui.min.css",
+					"3_commodityMall_engineering/static/fonts/mui.ttf",
+					"3_commodityMall_engineering/static/css/bootstrap.min.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.css",
+					"3_commodityMall_engineering/static/iconfont/iconfont.eot",
+					"3_commodityMall_engineering/static/iconfont/iconfont.woff",
+					"3_commodityMall_engineering/static/iconfont/iconfont.ttf",
+					"3_commodityMall_engineering/static/iconfont/iconfont.svg",
+					"3_commodityMall_engineering/static/css/engineering.css",
+					"3_commodityMall_engineering/static/img/bg.png",
+					"3_commodityMall_engineering/static/img/icon17.png",
+					"3_commodityMall_engineering/static/img/icon17_1.png",
+					"3_commodityMall_engineering/static/img/addpic2.png",
+					"3_commodityMall_engineering/static/js/jquery-1.12.4.min.js",
+					"3_commodityMall_engineering/static/js/bootstrap.min.js",
+					"3_commodityMall_engineering/static/js/public.js",
+					"3_commodityMall_engineering/static/js/engineering.js",
+					"3_commodityMall_engineering/static/js/mui.min.js",
+					"3_commodityMall_engineering/static/img/icon5_1.png",
+					"3_commodityMall_engineering/static/img/icon6.png",
+					"3_commodityMall_engineering/static/img/icon7.png"
+				],
+				"refer": [
+					"3_commodityMall_engineering/3220_faultDetails.html",
+					"3_commodityMall_engineering/3210_receiveCenter.html",
+					"3_commodityMall_engineering/3200_myOrder.html",
+					"3_commodityMall_engineering/3320_mine.html"
+				],
+				"priority": 2
+			},
+			"1_commodityMail_marketer/11B0_myShop.html": {
+				"href": "1_commodityMail_marketer/11B0_myShop.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1200_settledApply.html"
+				],
+				"priority": 6
+			},
+			"1_commodityMail_marketer/1131_addChildAccount.html": {
+				"href": "1_commodityMail_marketer/1131_addChildAccount.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"priority": 8
+			},
+			"1_commodityMail_marketer/1130_myChildAccount.html": {
+				"href": "1_commodityMail_marketer/1130_myChildAccount.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/img/head.png"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1130_myChildAccount.html",
+					"1_commodityMail_marketer/1131_addChildAccount.html"
+				],
+				"priority": 7
+			},
+			"1_commodityMail_marketer/1122_pointBillDetails.html": {
+				"href": "1_commodityMail_marketer/1122_pointBillDetails.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"priority": 8
+			},
+			"1_commodityMail_marketer/1121_pointRule.html": {
+				"href": "1_commodityMail_marketer/1121_pointRule.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"priority": 9
+			},
+			"1_commodityMail_marketer/1120_myPoints.html": {
+				"href": "1_commodityMail_marketer/1120_myPoints.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1122_pointBillDetails.html",
+					"1_commodityMail_marketer/1121_pointRule.html"
+				],
+				"priority": 8
+			},
+			"1_commodityMail_marketer/1810_askToRentDetail.html": {
+				"href": "1_commodityMail_marketer/1810_askToRentDetail.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"priority": 9
+			},
+			"1_commodityMail_marketer/1510_adsDetail.html": {
+				"href": "1_commodityMail_marketer/1510_adsDetail.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/js/hammer.min.js",
+					"1_commodityMail_marketer/static/img/bg2.png"
+				],
+				"priority": 10
+			},
+			"1_commodityMail_marketer/1920_recruitDetails.html": {
+				"href": "1_commodityMail_marketer/1920_recruitDetails.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"priority": 12
+			},
+			"1_commodityMail_marketer/1910_jobRelease.html": {
+				"href": "1_commodityMail_marketer/1910_jobRelease.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/mui.picker.css",
+					"1_commodityMail_marketer/static/css/mui.poppicker.css",
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/mui.min.js",
+					"1_commodityMail_marketer/static/js/mui.picker.min.js",
+					"1_commodityMail_marketer/static/js/sorts.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1900_recruitManagement.html"
+				],
+				"priority": 14
+			},
+			"1_commodityMail_marketer/1900_recruitManagement.html": {
+				"href": "1_commodityMail_marketer/1900_recruitManagement.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1950_CVDetails.html",
+					"1_commodityMail_marketer/1920_recruitDetails.html",
+					"1_commodityMail_marketer/1000_index.html",
+					"1_commodityMail_marketer/1910_jobRelease.html"
+				],
+				"priority": 11
+			},
+			"1_commodityMail_marketer/1950_CVDetails.html": {
+				"href": "1_commodityMail_marketer/1950_CVDetails.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/mui.picker.css",
+					"1_commodityMail_marketer/static/css/mui.poppicker.css",
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/mui.min.js",
+					"1_commodityMail_marketer/static/js/mui.picker.min.js",
+					"1_commodityMail_marketer/static/js/sorts.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/img/head.png",
+					"1_commodityMail_marketer/static/img/female.png",
+					"1_commodityMail_marketer/static/img/male.png",
+					"1_commodityMail_marketer/static/img/experience.png",
+					"1_commodityMail_marketer/static/img/education.png",
+					"1_commodityMail_marketer/static/img/phone.png"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1900_recruitManagement.html"
+				],
+				"priority": 11
+			},
+			"1_commodityMail_marketer/1160_myCollection.html": {
+				"href": "1_commodityMail_marketer/1160_myCollection.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/img/bg2.png"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1810_askToRentDetail.html",
+					"1_commodityMail_marketer/1510_adsDetail.html",
+					"1_commodityMail_marketer/1950_CVDetails.html"
+				],
+				"priority": 9
+			},
+			"1_commodityMail_marketer/1140_myInvitationRecord.html": {
+				"href": "1_commodityMail_marketer/1140_myInvitationRecord.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1950_CVDetails.html",
+					"1_commodityMail_marketer/1810_askToRentDetail.html"
+				],
+				"priority": 10
+			},
+			"1_commodityMail_marketer/1111_bookBillDetail.html": {
+				"href": "1_commodityMail_marketer/1111_bookBillDetail.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"priority": 11
+			},
+			"1_commodityMail_marketer/1110_myBookBills.html": {
+				"href": "1_commodityMail_marketer/1110_myBookBills.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/dropload.css",
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/dropload.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/img/bg2.png"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1111_bookBillDetail.html"
+				],
+				"priority": 11
+			},
+			"1_commodityMail_marketer/1150_baseInfo.html": {
+				"href": "1_commodityMail_marketer/1150_baseInfo.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1100_mine.html"
+				],
+				"priority": 12
+			},
+			"1_commodityMail_marketer/1100_mine.html": {
+				"href": "1_commodityMail_marketer/1100_mine.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/img/waiting.gif",
+					"1_commodityMail_marketer/static/img/head.png",
+					"1_commodityMail_marketer/static/img/icon15.png",
+					"1_commodityMail_marketer/static/img/icon18.png",
+					"1_commodityMail_marketer/static/img/icon10.png",
+					"1_commodityMail_marketer/static/img/icon11.png",
+					"1_commodityMail_marketer/static/img/icon12.png",
+					"1_commodityMail_marketer/static/img/icon13.png",
+					"1_commodityMail_marketer/static/img/icon1.png",
+					"1_commodityMail_marketer/static/img/icon2.png",
+					"1_commodityMail_marketer/static/img/icon3_1.png"
+				],
+				"refer": [
+					"0_commodityMall_login/0004_selectIdentity.html",
+					"1_commodityMail_marketer/11B0_myShop.html",
+					"1_commodityMail_marketer/1130_myChildAccount.html",
+					"1_commodityMail_marketer/1120_myPoints.html",
+					"1_commodityMail_marketer/1160_myCollection.html",
+					"1_commodityMail_marketer/1140_myInvitationRecord.html",
+					"1_commodityMail_marketer/1110_myBookBills.html",
+					"1_commodityMail_marketer/1150_baseInfo.html",
+					"1_commodityMail_marketer/1000_index.html",
+					"1_commodityMail_marketer/1710_sthToSay.html",
+					"1_commodityMail_marketer/11A0_setUp.html"
+				],
+				"priority": 5
+			},
+			"1_commodityMail_marketer/1830_rentDetail.html": {
+				"href": "1_commodityMail_marketer/1830_rentDetail.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/img/deleicon.png",
+					"1_commodityMail_marketer/static/img/waiting.gif"
+				],
+				"priority": 7
+			},
+			"1_commodityMail_marketer/1840_newRent.html": {
+				"href": "1_commodityMail_marketer/1840_newRent.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/mui.picker.css",
+					"1_commodityMail_marketer/static/css/mui.poppicker.css",
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/mui.min.js",
+					"1_commodityMail_marketer/static/js/mui.picker.min.js",
+					"1_commodityMail_marketer/static/js/sorts.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/img/waiting.gif"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1820_myRent.html"
+				],
+				"priority": 9
+			},
+			"1_commodityMail_marketer/1820_myRent.html": {
+				"href": "1_commodityMail_marketer/1820_myRent.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1830_rentDetail.html",
+					"1_commodityMail_marketer/1840_newRent.html"
+				],
+				"priority": 8
+			},
+			"1_commodityMail_marketer/1800_stallsManagement.html": {
+				"href": "1_commodityMail_marketer/1800_stallsManagement.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/dropload.css",
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/dropload.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1810_askToRentDetail.html",
+					"1_commodityMail_marketer/1830_rentDetail.html",
+					"1_commodityMail_marketer/1820_myRent.html"
+				],
+				"priority": 6
+			},
+			"1_commodityMail_marketer/1500_adsForRent.html": {
+				"href": "1_commodityMail_marketer/1500_adsForRent.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/dropload.css",
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/dropload.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/img/bg2.png"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1510_adsDetail.html"
+				],
+				"priority": 8
+			},
+			"1_commodityMail_marketer/1320_activeApplyDetails.html": {
+				"href": "1_commodityMail_marketer/1320_activeApplyDetails.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"priority": 9
+			},
+			"1_commodityMail_marketer/1310_activeApply.html": {
+				"href": "1_commodityMail_marketer/1310_activeApply.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1300_activeApplyRecords.html"
+				],
+				"priority": 10
+			},
+			"1_commodityMail_marketer/1300_activeApplyRecords.html": {
+				"href": "1_commodityMail_marketer/1300_activeApplyRecords.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1320_activeApplyDetails.html",
+					"1_commodityMail_marketer/1310_activeApply.html",
+					"1_commodityMail_marketer/1000_index.html"
+				],
+				"priority": 9
+			},
+			"1_commodityMail_marketer/1410_decorateApplyDetails.html": {
+				"href": "1_commodityMail_marketer/1410_decorateApplyDetails.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js"
+				],
+				"priority": 10
+			},
+			"1_commodityMail_marketer/1420_decorateApply.html": {
+				"href": "1_commodityMail_marketer/1420_decorateApply.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/img/waiting.gif"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1400_decorateApplyRecords.html"
+				],
+				"priority": 11
+			},
+			"1_commodityMail_marketer/1400_decorateApplyRecords.html": {
+				"href": "1_commodityMail_marketer/1400_decorateApplyRecords.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/img/deleicon.png",
+					"1_commodityMail_marketer/static/img/waiting.gif"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1410_decorateApplyDetails.html",
+					"1_commodityMail_marketer/1420_decorateApply.html",
+					"1_commodityMail_marketer/1000_index.html"
+				],
+				"priority": 10
+			},
+			"1_commodityMail_marketer/1000_index.html": {
+				"href": "1_commodityMail_marketer/1000_index.html",
+				"resources": [
+					"1_commodityMail_marketer/static/css/bootstrap.min.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.css",
+					"1_commodityMail_marketer/static/iconfont/iconfont.eot",
+					"1_commodityMail_marketer/static/iconfont/iconfont.woff",
+					"1_commodityMail_marketer/static/iconfont/iconfont.ttf",
+					"1_commodityMail_marketer/static/iconfont/iconfont.svg",
+					"1_commodityMail_marketer/static/css/marketer.css",
+					"1_commodityMail_marketer/static/img/addpic.png",
+					"1_commodityMail_marketer/static/img/bg.png",
+					"1_commodityMail_marketer/static/img/addpic2.png",
+					"1_commodityMail_marketer/static/img/addpic3.png",
+					"1_commodityMail_marketer/static/img/img1.png",
+					"1_commodityMail_marketer/static/img/img2.png",
+					"1_commodityMail_marketer/static/img/img3.png",
+					"1_commodityMail_marketer/static/img/img1_1.png",
+					"1_commodityMail_marketer/static/img/img2_1.png",
+					"1_commodityMail_marketer/static/img/img3_1.png",
+					"1_commodityMail_marketer/static/img/icon17.png",
+					"1_commodityMail_marketer/static/img/icon17_1.png",
+					"1_commodityMail_marketer/static/img/bg3.png",
+					"1_commodityMail_marketer/static/js/jquery-1.12.4.min.js",
+					"1_commodityMail_marketer/static/js/bootstrap.min.js",
+					"1_commodityMail_marketer/static/js/scrollForever.min.js",
+					"1_commodityMail_marketer/static/js/public.js",
+					"1_commodityMail_marketer/static/js/marketer.js",
+					"1_commodityMail_marketer/static/js/hammer.min.js",
+					"1_commodityMail_marketer/static/img/icon1_1.png",
+					"1_commodityMail_marketer/static/img/icon2.png",
+					"1_commodityMail_marketer/static/img/icon3.png",
+					"1_commodityMail_marketer/static/img/ad1-1.jpg",
+					"1_commodityMail_marketer/static/img/ad1-2.jpg",
+					"1_commodityMail_marketer/static/img/ad1-3.jpg",
+					"1_commodityMail_marketer/static/img/ad1-4.jpg",
+					"1_commodityMail_marketer/static/img/ad1-5.jpg",
+					"1_commodityMail_marketer/static/img/zg.png",
+					"1_commodityMail_marketer/static/img/icon4.png",
+					"1_commodityMail_marketer/static/img/icon5.png",
+					"1_commodityMail_marketer/static/img/icon6.png",
+					"1_commodityMail_marketer/static/img/icon7.png",
+					"1_commodityMail_marketer/static/img/icon8.png",
+					"1_commodityMail_marketer/static/img/icon9.png"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1600_noticePlatform.html",
+					"1_commodityMail_marketer/1710_sthToSay.html",
+					"1_commodityMail_marketer/1100_mine.html",
+					"1_commodityMail_marketer/1800_stallsManagement.html",
+					"1_commodityMail_marketer/1900_recruitManagement.html",
+					"1_commodityMail_marketer/1500_adsForRent.html",
+					"1_commodityMail_marketer/1300_activeApplyRecords.html",
+					"1_commodityMail_marketer/1400_decorateApplyRecords.html",
+					"1_commodityMail_marketer/1700_responsiveCenter.html"
+				],
+				"priority": 3
+			},
+			"2_commodityMall_marketManager/2100_mine.html": {
+				"href": "2_commodityMall_marketManager/2100_mine.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js",
+					"2_commodityMall_marketManager/static/img/waiting.gif",
+					"2_commodityMall_marketManager/static/img/head.png",
+					"2_commodityMall_marketManager/static/img/icon2_1.png",
+					"2_commodityMall_marketManager/static/img/icon4.png",
+					"2_commodityMall_marketManager/static/img/icon5.png",
+					"2_commodityMall_marketManager/static/img/icon7.png",
+					"2_commodityMall_marketManager/static/img/icon1.png",
+					"2_commodityMall_marketManager/static/img/icon3_1.png"
+				],
+				"refer": [
+					"5_commodityMall_weChat/5130_myinfo.html",
+					"0_commodityMall_login/0001_index.html",
+					"0_commodityMall_login/0004_selectIdentity.html",
+					"0_commodityMall_login/0002_resetPassword.html",
+					"1_commodityMail_marketer/1190_aboutUs.html",
+					"2_commodityMall_marketManager/2000_index.html"
+				],
+				"priority": 6
+			},
+			"2_commodityMall_marketManager/2201_eventDetails.html": {
+				"href": "2_commodityMall_marketManager/2201_eventDetails.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js",
+					"2_commodityMall_marketManager/static/img/icon16.png"
+				],
+				"priority": 7
+			},
+			"2_commodityMall_marketManager/2200_warningCenter.html": {
+				"href": "2_commodityMall_marketManager/2200_warningCenter.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js"
+				],
+				"refer": [
+					"2_commodityMall_marketManager/2201_eventDetails.html"
+				],
+				"priority": 7
+			},
+			"2_commodityMall_marketManager/2520_recruitStatistics.html": {
+				"href": "2_commodityMall_marketManager/2520_recruitStatistics.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js",
+					"2_commodityMall_marketManager/static/img/dao.png",
+					"2_commodityMall_marketManager/static/img/zheng.png"
+				],
+				"priority": 8
+			},
+			"2_commodityMall_marketManager/2531_rentDetails.html": {
+				"href": "2_commodityMall_marketManager/2531_rentDetails.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js"
+				],
+				"priority": 9
+			},
+			"2_commodityMall_marketManager/2532_askForRentDetails.html": {
+				"href": "2_commodityMall_marketManager/2532_askForRentDetails.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js"
+				],
+				"priority": 10
+			},
+			"2_commodityMall_marketManager/2530_shopLeaseStatistics.html": {
+				"href": "2_commodityMall_marketManager/2530_shopLeaseStatistics.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js"
+				],
+				"refer": [
+					"2_commodityMall_marketManager/2531_rentDetails.html",
+					"2_commodityMall_marketManager/2532_askForRentDetails.html"
+				],
+				"priority": 9
+			},
+			"2_commodityMall_marketManager/2513_pointBillDetails.html": {
+				"href": "2_commodityMall_marketManager/2513_pointBillDetails.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js"
+				],
+				"priority": 10
+			},
+			"2_commodityMall_marketManager/2512_shopPoints.html": {
+				"href": "2_commodityMall_marketManager/2512_shopPoints.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js"
+				],
+				"refer": [
+					"2_commodityMall_marketManager/2513_pointBillDetails.html"
+				],
+				"priority": 10
+			},
+			"2_commodityMall_marketManager/2510_pointsStatistics.html": {
+				"href": "2_commodityMall_marketManager/2510_pointsStatistics.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/dropload.css",
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/dropload.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js",
+					"2_commodityMall_marketManager/static/img/dao.png",
+					"2_commodityMall_marketManager/static/img/zheng.png"
+				],
+				"refer": [
+					"2_commodityMall_marketManager/2512_shopPoints.html"
+				],
+				"priority": 10
+			},
+			"2_commodityMall_marketManager/2561_adsDetail.html": {
+				"href": "2_commodityMall_marketManager/2561_adsDetail.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js",
+					"2_commodityMall_marketManager/static/js/hammer.min.js",
+					"2_commodityMall_marketManager/static/img/bg2.png"
+				],
+				"priority": 11
+			},
+			"2_commodityMall_marketManager/2560_adsPositionStatistics.html": {
+				"href": "2_commodityMall_marketManager/2560_adsPositionStatistics.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/mui.min.css",
+					"2_commodityMall_marketManager/static/fonts/mui.ttf",
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js"
+				],
+				"refer": [
+					"2_commodityMall_marketManager/2561_adsDetail.html"
+				],
+				"priority": 11
+			},
+			"2_commodityMall_marketManager/2552_repairDetails.html": {
+				"href": "2_commodityMall_marketManager/2552_repairDetails.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js"
+				],
+				"priority": 12
+			},
+			"2_commodityMall_marketManager/2551_repairRecord.html": {
+				"href": "2_commodityMall_marketManager/2551_repairRecord.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/img/bg2.png",
+					"2_commodityMall_marketManager/static/img/head.png"
+				],
+				"refer": [
+					"2_commodityMall_marketManager/2552_repairDetails.html"
+				],
+				"priority": 12
+			},
+			"2_commodityMall_marketManager/2550_repairStatistics.html": {
+				"href": "2_commodityMall_marketManager/2550_repairStatistics.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/mui.min.css",
+					"2_commodityMall_marketManager/static/fonts/mui.ttf",
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js",
+					"2_commodityMall_marketManager/static/img/dao.png",
+					"2_commodityMall_marketManager/static/img/zheng.png"
+				],
+				"refer": [
+					"2_commodityMall_marketManager/2551_repairRecord.html"
+				],
+				"priority": 12
+			},
+			"2_commodityMall_marketManager/2540_noticeStatistics.html": {
+				"href": "2_commodityMall_marketManager/2540_noticeStatistics.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/mui.min.css",
+					"2_commodityMall_marketManager/static/fonts/mui.ttf",
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js"
+				],
+				"refer": [
+					"1_commodityMail_marketer/1610_noticeDetail.html"
+				],
+				"priority": 13
+			},
+			"2_commodityMall_marketManager/2500_statisticsCenter.html": {
+				"href": "2_commodityMall_marketManager/2500_statisticsCenter.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/scrollForever.min.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js",
+					"2_commodityMall_marketManager/static/img/icon18.png",
+					"2_commodityMall_marketManager/static/img/icon20.png",
+					"2_commodityMall_marketManager/static/img/icon9.png",
+					"2_commodityMall_marketManager/static/img/icon19.png",
+					"2_commodityMall_marketManager/static/img/icon21.png",
+					"2_commodityMall_marketManager/static/img/icon8.png"
+				],
+				"refer": [
+					"2_commodityMall_marketManager/2520_recruitStatistics.html",
+					"2_commodityMall_marketManager/2530_shopLeaseStatistics.html",
+					"2_commodityMall_marketManager/2510_pointsStatistics.html",
+					"2_commodityMall_marketManager/2560_adsPositionStatistics.html",
+					"2_commodityMall_marketManager/2550_repairStatistics.html",
+					"2_commodityMall_marketManager/2540_noticeStatistics.html"
+				],
+				"priority": 8
+			},
+			"2_commodityMall_marketManager/2312_noticeDetails.html": {
+				"href": "2_commodityMall_marketManager/2312_noticeDetails.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js",
+					"2_commodityMall_marketManager/static/img/head.png"
+				],
+				"priority": 9
+			},
+			"2_commodityMall_marketManager/2311_approvalRecord.html": {
+				"href": "2_commodityMall_marketManager/2311_approvalRecord.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js"
+				],
+				"refer": [
+					"2_commodityMall_marketManager/2312_noticeDetails.html"
+				],
+				"priority": 9
+			},
+			"2_commodityMall_marketManager/2310_noticeApproval.html": {
+				"href": "2_commodityMall_marketManager/2310_noticeApproval.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/scrollForever.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js"
+				],
+				"refer": [
+					"2_commodityMall_marketManager/2311_approvalRecord.html"
+				],
+				"priority": 9
+			},
+			"2_commodityMall_marketManager/2322_pointBillDetails.html": {
+				"href": "2_commodityMall_marketManager/2322_pointBillDetails.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js"
+				],
+				"priority": 10
+			},
+			"2_commodityMall_marketManager/2321_pointsApprovalCenter.html": {
+				"href": "2_commodityMall_marketManager/2321_pointsApprovalCenter.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/mui.min.css",
+					"2_commodityMall_marketManager/static/fonts/mui.ttf",
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js"
+				],
+				"refer": [
+					"2_commodityMall_marketManager/2322_pointBillDetails.html"
+				],
+				"priority": 10
+			},
+			"2_commodityMall_marketManager/2332_decorateBillDetails.html": {
+				"href": "2_commodityMall_marketManager/2332_decorateBillDetails.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js",
+					"2_commodityMall_marketManager/static/img/waiting.gif"
+				],
+				"priority": 11
+			},
+			"2_commodityMall_marketManager/2331_decorateApprovalCenter.html": {
+				"href": "2_commodityMall_marketManager/2331_decorateApprovalCenter.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js"
+				],
+				"refer": [
+					"2_commodityMall_marketManager/2332_decorateBillDetails.html"
+				],
+				"priority": 11
+			},
+			"2_commodityMall_marketManager/2342_activeBillDetails.html": {
+				"href": "2_commodityMall_marketManager/2342_activeBillDetails.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js"
+				],
+				"priority": 12
+			},
+			"2_commodityMall_marketManager/2341_activeApprovalCenter.html": {
+				"href": "2_commodityMall_marketManager/2341_activeApprovalCenter.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js"
+				],
+				"refer": [
+					"2_commodityMall_marketManager/2342_activeBillDetails.html"
+				],
+				"priority": 12
+			},
+			"2_commodityMall_marketManager/2300_approvalCenter.html": {
+				"href": "2_commodityMall_marketManager/2300_approvalCenter.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/scrollForever.min.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js",
+					"2_commodityMall_marketManager/static/img/icon8.png",
+					"2_commodityMall_marketManager/static/img/icon9.png",
+					"2_commodityMall_marketManager/static/img/icon10.png",
+					"2_commodityMall_marketManager/static/img/icon11.png"
+				],
+				"refer": [
+					"2_commodityMall_marketManager/2310_noticeApproval.html",
+					"2_commodityMall_marketManager/2321_pointsApprovalCenter.html",
+					"2_commodityMall_marketManager/2331_decorateApprovalCenter.html",
+					"2_commodityMall_marketManager/2341_activeApprovalCenter.html"
+				],
+				"priority": 9
+			},
+			"2_commodityMall_marketManager/2401_suggestDetails.html": {
+				"href": "2_commodityMall_marketManager/2401_suggestDetails.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js",
+					"2_commodityMall_marketManager/static/img/head.png"
+				],
+				"priority": 10
+			},
+			"2_commodityMall_marketManager/2400_suggestCenter.html": {
+				"href": "2_commodityMall_marketManager/2400_suggestCenter.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/dropload.css",
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/dropload.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js"
+				],
+				"refer": [
+					"2_commodityMall_marketManager/2401_suggestDetails.html"
+				],
+				"priority": 10
+			},
+			"2_commodityMall_marketManager/2710_createNotice.html": {
+				"href": "2_commodityMall_marketManager/2710_createNotice.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js",
+					"2_commodityMall_marketManager/static/img/waiting.gif"
+				],
+				"priority": 12
+			},
+			"2_commodityMall_marketManager/2700_noticeCenter.html": {
+				"href": "2_commodityMall_marketManager/2700_noticeCenter.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/dropload.css",
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/dropload.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js"
+				],
+				"refer": [
+					"2_commodityMall_marketManager/2312_noticeDetails.html",
+					"2_commodityMall_marketManager/2710_createNotice.html"
+				],
+				"priority": 11
+			},
+			"2_commodityMall_marketManager/2810_createInform.html": {
+				"href": "2_commodityMall_marketManager/2810_createInform.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js",
+					"2_commodityMall_marketManager/static/img/waiting.gif"
+				],
+				"priority": 12
+			},
+			"2_commodityMall_marketManager/2800_informCenter.html": {
+				"href": "2_commodityMall_marketManager/2800_informCenter.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/mui.min.css",
+					"2_commodityMall_marketManager/static/fonts/mui.ttf",
+					"2_commodityMall_marketManager/static/css/dropload.css",
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/dropload.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js",
+					"2_commodityMall_marketManager/static/js/mui.min.js"
+				],
+				"refer": [
+					"2_commodityMall_marketManager/2810_createInform.html"
+				],
+				"priority": 12
+			},
+			"2_commodityMall_marketManager/2511_createPointsBill.html": {
+				"href": "2_commodityMall_marketManager/2511_createPointsBill.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/mui.picker.css",
+					"2_commodityMall_marketManager/static/css/mui.poppicker.css",
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/mui.min.js",
+					"2_commodityMall_marketManager/static/js/mui.picker.min.js",
+					"2_commodityMall_marketManager/static/js/sorts.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js",
+					"2_commodityMall_marketManager/static/img/waiting.gif"
+				],
+				"refer": [
+					"2_commodityMall_marketManager/2600_myPointBil.html"
+				],
+				"priority": 14
+			},
+			"2_commodityMall_marketManager/2600_myPointBil.html": {
+				"href": "2_commodityMall_marketManager/2600_myPointBil.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/mui.min.css",
+					"2_commodityMall_marketManager/static/fonts/mui.ttf",
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/js/marketManager.js"
+				],
+				"refer": [
+					"2_commodityMall_marketManager/2322_pointBillDetails.html",
+					"2_commodityMall_marketManager/2511_createPointsBill.html"
+				],
+				"priority": 13
+			},
+			"2_commodityMall_marketManager/2000_index.html": {
+				"href": "2_commodityMall_marketManager/2000_index.html",
+				"resources": [
+					"2_commodityMall_marketManager/static/css/bootstrap.min.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.css",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.eot",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.woff",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.ttf",
+					"2_commodityMall_marketManager/static/iconfont/iconfont.svg",
+					"2_commodityMall_marketManager/static/css/marketManager.css",
+					"2_commodityMall_marketManager/static/img/bg.png",
+					"2_commodityMall_marketManager/static/img/addpic3.png",
+					"2_commodityMall_marketManager/static/img/bg3.png",
+					"2_commodityMall_marketManager/static/img/icon17.png",
+					"2_commodityMall_marketManager/static/img/icon17_1.png",
+					"2_commodityMall_marketManager/static/js/jquery-1.12.4.min.js",
+					"2_commodityMall_marketManager/static/js/bootstrap.min.js",
+					"2_commodityMall_marketManager/static/js/scrollForever.min.js",
+					"2_commodityMall_marketManager/static/js/public.js",
+					"2_commodityMall_marketManager/static/img/deleicon.png",
+					"2_commodityMall_marketManager/static/js/marketManager.js",
+					"2_commodityMall_marketManager/static/img/head.png",
+					"2_commodityMall_marketManager/static/js/hammer.min.js",
+					"2_commodityMall_marketManager/static/img/icon1_1.png",
+					"2_commodityMall_marketManager/static/img/icon3.png",
+					"2_commodityMall_marketManager/static/img/ad1-1.jpg",
+					"2_commodityMall_marketManager/static/img/ad1-2.jpg",
+					"2_commodityMall_marketManager/static/img/ad1-3.jpg",
+					"2_commodityMall_marketManager/static/img/ad1-4.jpg",
+					"2_commodityMall_marketManager/static/img/ad1-5.jpg",
+					"2_commodityMall_marketManager/static/img/zg.png",
+					"2_commodityMall_marketManager/static/img/icon12.png",
+					"2_commodityMall_marketManager/static/img/icon13.png",
+					"2_commodityMall_marketManager/static/img/icon14.png",
+					"2_commodityMall_marketManager/static/img/icon15.png",
+					"2_commodityMall_marketManager/static/img/icon22.png",
+					"2_commodityMall_marketManager/static/img/icon23.png",
+					"2_commodityMall_marketManager/static/img/icon24.png",
+					"2_commodityMall_marketManager/static/img/icon25.png",
+					"2_commodityMall_marketManager/static/img/icon26.png"
+				],
+				"refer": [
+					"0_commodityMall_login/0001_index.html",
+					"1_commodityMail_marketer/1600_noticePlatform.html",
+					"2_commodityMall_marketManager/2100_mine.html",
+					"2_commodityMall_marketManager/2200_warningCenter.html",
+					"2_commodityMall_marketManager/2500_statisticsCenter.html",
+					"2_commodityMall_marketManager/2300_approvalCenter.html",
+					"2_commodityMall_marketManager/2400_suggestCenter.html",
+					"2_commodityMall_marketManager/2700_noticeCenter.html",
+					"2_commodityMall_marketManager/2800_informCenter.html",
+					"2_commodityMall_marketManager/2600_myPointBil.html"
+				],
+				"priority": 4
+			},
+			"0_commodityMall_login/0003_register.html": {
+				"href": "0_commodityMall_login/0003_register.html",
+				"resources": [
+					"0_commodityMall_login/static/css/jquery.mobile-1.4.5.css",
+					"0_commodityMall_login/static/css/bootstrap.min.css",
+					"0_commodityMall_login/static/iconfont/iconfont.css",
+					"0_commodityMall_login/static/iconfont/iconfont.eot",
+					"0_commodityMall_login/static/iconfont/iconfont.woff",
+					"0_commodityMall_login/static/iconfont/iconfont.ttf",
+					"0_commodityMall_login/static/iconfont/iconfont.svg",
+					"0_commodityMall_login/static/css/login.css",
+					"0_commodityMall_login/static/img/btn.png",
+					"0_commodityMall_login/static/js/jquery-1.12.4.min.js",
+					"0_commodityMall_login/static/js/bootstrap.min.js",
+					"0_commodityMall_login/static/js/sj_validate.js",
+					"0_commodityMall_login/static/js/login.js"
+				],
+				"refer": [
+					"0_commodityMall_login/0004_selectIdentity.html"
+				],
+				"priority": 6
+			},
+			"0_commodityMall_login/0001_index.html": {
+				"href": "0_commodityMall_login/0001_index.html",
+				"resources": [
+					"0_commodityMall_login/static/css/bootstrap.min.css",
+					"0_commodityMall_login/static/iconfont/iconfont.css",
+					"0_commodityMall_login/static/iconfont/iconfont.eot",
+					"0_commodityMall_login/static/iconfont/iconfont.woff",
+					"0_commodityMall_login/static/iconfont/iconfont.ttf",
+					"0_commodityMall_login/static/iconfont/iconfont.svg",
+					"0_commodityMall_login/static/css/login.css",
+					"0_commodityMall_login/static/img/btn.png",
+					"0_commodityMall_login/static/js/jquery-1.12.4.min.js",
+					"0_commodityMall_login/static/js/bootstrap.min.js",
+					"0_commodityMall_login/static/js/sj_validate.js",
+					"0_commodityMall_login/static/js/login.js"
+				],
+				"refer": [
+					"0_commodityMall_login/0004_selectIdentity.html",
+					"3_commodityMall_engineering/3120_sendCenter.html",
+					"3_commodityMall_engineering/3210_receiveCenter.html",
+					"1_commodityMail_marketer/1000_index.html",
+					"2_commodityMall_marketManager/2000_index.html",
+					"5_commodityMall_weChat/5000_index.html",
+					"0_commodityMall_login/0003_register.html",
+					"0_commodityMall_login/0002_resetPassword.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"5_commodityMall_weChat/src/src/extensions/export/bootstrap-table-export.js",
+				"5_commodityMall_weChat/src/src/extensions/print/bootstrap-table-print.js",
+				"5_commodityMall_weChat/static/css/swiper-3.4.1.min.css",
+				"5_commodityMall_weChat/src/src/extensions/key-events/bootstrap-table-key-events.js",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-ms-MY.js",
+				"5_commodityMall_weChat/src/src/extensions/filter-control/README.md",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-pl-PL.js",
+				"5_commodityMall_weChat/src/src/extensions/multiple-selection-row/extension.json",
+				"2_commodityMall_marketManager/2361_approvalRecord.html",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-pt-PT.js",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-uk-UA.js",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-vi-VN.js",
+				"5_commodityMall_weChat/new_file.html",
+				"5_commodityMall_weChat/static/img/tongzhi2.jpg",
+				"5_commodityMall_weChat/src/src/extensions/toolbar/bootstrap-table-toolbar.js",
+				"5_commodityMall_weChat/static/img/~8S$C5YTS3JRPAB8D6[](~N.png",
+				"5_commodityMall_weChat/src/src/extensions/reorder-rows/extension.json",
+				"1_commodityMail_marketer/static/js/jquery-1.12.4.js",
+				"5_commodityMall_weChat/src/src/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.css",
+				"5_commodityMall_weChat/src/src/extensions/copy-rows/README.md",
+				"5_commodityMall_weChat/src/src/extensions/multiple-sort/extension.json",
+				"1_commodityMail_marketer/test.html",
+				"3_commodityMall_engineering/static/css/mui.poppicker.css",
+				"5_commodityMall_weChat/src/src/extensions/filter/bootstrap-table-filter.js",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-nb-NO.js",
+				"0_commodityMall_login/static/css/style.css",
+				"5_commodityMall_weChat/img/icon11.png",
+				"5_commodityMall_weChat/src/src/extensions/cookie/README.md",
+				"2_commodityMall_marketManager/static/img/icon2_2.png",
+				"1_commodityMail_marketer/static/img/icon14.png",
+				"5_commodityMall_weChat/src/src/extensions/key-events/README.md",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-en-US.js",
+				"3_commodityMall_engineering/static/css/style.css",
+				"5_commodityMall_weChat/src/src/extensions/tree-column/bootstrap-table-tree-column.css",
+				"5_commodityMall_weChat/src/src/extensions/multi-column-toggle/extension.json",
+				"0_commodityMall_login/0007_promptPage.html",
+				"5_commodityMall_weChat/img/icon5.png",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-fr-BE.js",
+				"5_commodityMall_weChat/new_file1.html",
+				"5_commodityMall_weChat/src/src/extensions/filter-control/bootstrap-table-filter-control.css",
+				"5_commodityMall_weChat/static/img/icon6.png",
+				"2_commodityMall_marketManager/2900_messageCenter.html",
+				"5_commodityMall_weChat/static/img/icon15.png",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-pt-BR.js",
+				"5_commodityMall_weChat/src/src/extensions/accent-neutralise/extension.json",
+				"5_commodityMall_weChat/static/img/img2.png",
+				"5_commodityMall_weChat/static/img/btn.png",
+				"0_commodityMall_login/src/style.less",
+				"2_commodityMall_marketManager/2910_informDetails.html",
+				"5_commodityMall_weChat/img/btn.png",
+				"5_commodityMall_weChat/src/src/extensions/resizable/bootstrap-table-resizable.js",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-es-MX.js",
+				"1_commodityMail_marketer/manifest.json",
+				"3_commodityMall_engineering/static/js/sorts.js",
+				"5_commodityMall_weChat/src/src/extensions/editable/bootstrap-table-editable.js",
+				"5_commodityMall_weChat/static/img/addpic2.png",
+				"5_commodityMall_weChat/src/src/extensions/reorder-columns/bootstrap-table-reorder-columns.js",
+				"5_commodityMall_weChat/src/src/extensions/filter-control/bootstrap-table-filter-control.js",
+				"5_commodityMall_weChat/static/img/1.png",
+				"1_commodityMail_marketer/static/css/mui.min.css",
+				"5_commodityMall_weChat/src/src/extensions/tree-column/extension.json",
+				"5_commodityMall_weChat/static/js/LAreaData2.js",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-fa-IR.js",
+				"5_commodityMall_weChat/src/src/extensions/group-by/extension.json",
+				"3_commodityMall_engineering/static/js/scrollForever.min.js",
+				"5_commodityMall_weChat/src/src/extensions/cookie/bootstrap-table-cookie.js",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-zh-CN.js",
+				"5_commodityMall_weChat/static/img/icon3 (2).png",
+				"5_commodityMall_weChat/static/img/img1_1.png",
+				"5_commodityMall_weChat/img/icon8.png",
+				"1_commodityMail_marketer/static/fonts/mui-icons-extra.ttf",
+				"5_commodityMall_weChat/src/src/extensions/natural-sorting/README.md",
+				"2_commodityMall_marketManager/static/img/huodong.png",
+				"5_commodityMall_weChat/src/src/extensions/natural-sorting/bootstrap-table-natural-sorting.js",
+				"0_commodityMall_login/static/js/jquery.mobile-1.4.5.js",
+				"1_commodityMail_marketer/1770_reportDetails.html",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-es-AR.js",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-es-CR.js",
+				"3_commodityMall_engineering/static/js/bootstrap.js",
+				"2_commodityMall_marketManager/static/img/zhuangxiu.png",
+				"5_commodityMall_weChat/src/src/extensions/accent-neutralise/bootstrap-table-accent-neutralise.js",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-de-DE.js",
+				"5_commodityMall_weChat/img/icon11_1.png",
+				"5_commodityMall_weChat/src/src/extensions/auto-refresh/README.md",
+				"5_commodityMall_weChat/src/src/extensions/toolbar/extension.json",
+				"0_commodityMall_login/manifest.json",
+				"5_commodityMall_weChat/src/src/extensions/auto-refresh/bootstrap-table-auto-refresh.js",
+				"5_commodityMall_weChat/src/src/locale/README.md",
+				"5_commodityMall_weChat/src/src/extensions/multiple-selection-row/README.md",
+				"5_commodityMall_weChat/static/img/btn_1.png",
+				"5_commodityMall_weChat/static/css/weChat.css",
+				"5_commodityMall_weChat/static/js/LAreaData1.js",
+				"5_commodityMall_weChat/src/src/extensions/cookie/extension.json",
+				"5_commodityMall_weChat/src/src/extensions/filter/README.md",
+				"2_commodityMall_marketManager/static/fonts/mui-icons-extra.ttf",
+				"5_commodityMall_weChat/static/js/marketManager.js",
+				"5_commodityMall_weChat/src/src/extensions/mobile/bootstrap-table-mobile.js",
+				"5_commodityMall_weChat/static/img/icon13.png",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-el-GR.js",
+				"1_commodityMail_marketer/static/img/bg13002.png",
+				"5_commodityMall_weChat/src/src/extensions/multiple-sort/README.md",
+				"2_commodityMall_marketManager/2351_tipoffApprovalCenter.html",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-es-CL.js",
+				"1_commodityMail_marketer/static/fonts/mui.ttf",
+				"5_commodityMall_weChat/manifest.json",
+				"5_commodityMall_weChat/src/src/extensions/multi-column-toggle/README.md",
+				"5_commodityMall_weChat/static/img/tongzhi1.jpg",
+				"1_commodityMail_marketer/src/style.less",
+				"3_commodityMall_engineering/static/fonts/mui-icons-extra.ttf",
+				"1_commodityMail_marketer/src/marketer.less",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-es-SP.js",
+				"5_commodityMall_weChat/static/iconfont-1/demo.css",
+				"5_commodityMall_weChat/src/src/extensions/click-edit-row/bootstrap-table-click-edit-row.css",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-es-NI.js",
+				"5_commodityMall_weChat/src/src/extensions/flat-json/bootstrap-table-flat-json.js",
+				"0_commodityMall_login/static/js/jquery-1.12.4.js",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-th-TH.js",
+				"2_commodityMall_marketManager/src/marketManager.less",
+				"1_commodityMail_marketer/static/js/bootstrap.js",
+				"5_commodityMall_weChat/img/icon13.png",
+				"5_commodityMall_weChat/src/src/extensions/click-edit-row/bootstrap-table-click-edit-row.js",
+				"5_commodityMall_weChat/src/src/extensions/i18n-enhance/README.md",
+				"2_commodityMall_marketManager/static/img/gonggao.png",
+				"5_commodityMall_weChat/src/src/extensions/group-by-v2/extension.json",
+				"5_commodityMall_weChat/static/js/LArea.js",
+				"5_commodityMall_weChat/static/img/addpic3.png",
+				"2_commodityMall_marketManager/src/style.less",
+				"5_commodityMall_weChat/src/src/extensions/export/README.md",
+				"5_commodityMall_weChat/src/src/extensions/angular/bootstrap-table-angular.js",
+				"5_commodityMall_weChat/src/src/extensions/accent-neutralise/README.md",
+				"5_commodityMall_weChat/static/img/zg.png",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-cs-CZ.js",
+				"0_commodityMall_login/src/login.less",
+				"3_commodityMall_engineering/static/js/mui.picker.min.js",
+				"5_commodityMall_weChat/index.json/index.json",
+				"5_commodityMall_weChat/img/icon7.png",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-da-DK.js",
+				"5_commodityMall_weChat/src/src/extensions/export/extension.json",
+				"5_commodityMall_weChat/src/src/extensions/group-by-v2/README.md",
+				"5_commodityMall_weChat/src/src/extensions/group-by/bootstrap-table-group-by.js",
+				"1_commodityMail_marketer/static/css/bootstrap.css",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-ca-ES.js",
+				"5_commodityMall_weChat/static/js/login.js",
+				"5_commodityMall_weChat/src/src/extensions/toolbar/README.md",
+				"3_commodityMall_engineering/static/css/mui.picker.css",
+				"3_commodityMall_engineering/manifest.json",
+				"5_commodityMall_weChat/src/src/extensions/multiple-search/extension.json",
+				"5_commodityMall_weChat/src/src/extensions/editable/extension.json",
+				"5_commodityMall_weChat/src/src/extensions/mobile/extension.json",
+				"3_commodityMall_engineering/3230-del.html",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-sk-SK.js",
+				"0_commodityMall_login/static/css/bootstrap.css",
+				"5_commodityMall_weChat/src/src/extensions/natural-sorting/extension.json",
+				"1_commodityMail_marketer/static/css/style.css",
+				"5_commodityMall_weChat/src/src/extensions/multiple-search/bootstrap-table-multiple-search.js",
+				"5_commodityMall_weChat/src/src/bootstrap-table.css",
+				"2_commodityMall_marketManager/2320_.html",
+				"5_commodityMall_weChat/static/img/icon.png",
+				"2_commodityMall_marketManager/static/img/jifen.png",
+				"5_commodityMall_weChat/static/img/2.png",
+				"5_commodityMall_weChat/img/banner.png",
+				"0_commodityMall_login/static/js/sj_validate_common.js",
+				"2_commodityMall_marketManager/2340_.html",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-he-IL.js",
+				"5_commodityMall_weChat/src/style.less",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-en-US.js.template",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-ro-RO.js",
+				"2_commodityMall_marketManager/2362_informDetails.html",
+				"3_commodityMall_engineering/3130_.html",
+				"1_commodityMail_marketer/static/img/icon2_1.png",
+				"0_commodityMall_login/static/img/work.png",
+				"1_commodityMail_marketer/static/img/bg13001.png",
+				"5_commodityMall_weChat/src/src/extensions/tree-column/bootstrap-table-tree-column.js",
+				"5_commodityMall_weChat/img/icon12.png",
+				"1_commodityMail_marketer/1740-old.html",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-fr-FR.js",
+				"5_commodityMall_weChat/static/img/img3_1.png",
+				"2_commodityMall_marketManager/static/js/jquery-1.12.4.js",
+				"5_commodityMall_weChat/src/src/extensions/select2-filter/README.md",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-ja-JP.js",
+				"5_commodityMall_weChat/static/img/img2_1.png",
+				"5_commodityMall_weChat/static/img/icon18.png",
+				"5_commodityMall_weChat/static/img/icon9.png",
+				"5_commodityMall_weChat/img/icon9.png",
+				"2_commodityMall_marketManager/static/img/tongzhi.png",
+				"5_commodityMall_weChat/static/css/SimpleCanleder.css",
+				"3_commodityMall_engineering/static/js/jquery-1.12.4.js",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-ko-KR.js",
+				"5_commodityMall_weChat/src/src/extensions/flat-json/README.md",
+				"1_commodityMail_marketer/test1.html",
+				"1_commodityMail_marketer/1740-del.html",
+				"5_commodityMall_weChat/static/img/head.png",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-es-ES.js",
+				"5_commodityMall_weChat/src/src/extensions/multiple-sort/bootstrap-table-multiple-sort.js",
+				"5_commodityMall_weChat/src/src/extensions/group-by/README.md",
+				"3_commodityMall_engineering/src/engineering.less",
+				"1_commodityMail_marketer/1730-old.html",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-ru-RU.js",
+				"2_commodityMall_marketManager/static/img/jianyi.png",
+				"5_commodityMall_weChat/src/src/extensions/auto-refresh/extension.json",
+				"5_commodityMall_weChat/static/img/icon2.png",
+				"5_commodityMall_weChat/static/img/icon1 (2).png",
+				"5_commodityMall_weChat/src/src/extensions/sticky-header/extension.json",
+				"1_commodityMail_marketer/1A01-del.html",
+				"5_commodityMall_weChat/img/banner.jpg",
+				"5_commodityMall_weChat/src/src/extensions/sticky-header/README.md",
+				"5_commodityMall_weChat/src/src/extensions/tree-column/bootstrap-table-tree-column.less",
+				"5_commodityMall_weChat/src/src/extensions/copy-rows/extension.json",
+				"5_commodityMall_weChat/src/src/extensions/flat-json/extension.json",
+				"5_commodityMall_weChat/img/ad1-3.jpg",
+				"5_commodityMall_weChat/src/src/extensions/multiple-search/README.md",
+				"5_commodityMall_weChat/src/src/extensions/reorder-columns/README.md",
+				"5_commodityMall_weChat/static/img/icon4_1.png",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-et-EE.js",
+				"5_commodityMall_weChat/static/img/icon12.png",
+				"5_commodityMall_weChat/static/img/img1.png",
+				"0_commodityMall_login/static/js/bootstrap.js",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-ka-GE.js",
+				"3_commodityMall_engineering/3140_.html",
+				"3_commodityMall_engineering/src/style.less",
+				"2_commodityMall_marketManager/static/img/icon6.png",
+				"5_commodityMall_weChat/img/icon6.png",
+				"2_commodityMall_marketManager/static/img/notselect.png",
+				"5_commodityMall_weChat/static/img/img3.png",
+				"5_commodityMall_weChat/src/src/bootstrap-table.js",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-it-IT.js",
+				"2_commodityMall_marketManager/2350_tipoffApproval.html",
+				"5_commodityMall_weChat/static/img/icon10.png",
+				"5_commodityMall_weChat/src/src/extensions/i18n-enhance/bootstrap-table-i18n-enhance.js",
+				"5_commodityMall_weChat/src/src/extensions/mobile/README.md",
+				"5_commodityMall_weChat/src/src/extensions/copy-rows/bootstrap-table-copy-rows.js",
+				"5_commodityMall_weChat/static/img/icon17_1.png",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-id-ID.js",
+				"5_commodityMall_weChat/img/bg.png",
+				"2_commodityMall_marketManager/2330_.html",
+				"5_commodityMall_weChat/static/img/bg2.png",
+				"5_commodityMall_weChat/src/src/extensions/group-by-v2/bootstrap-table-group-by.js",
+				"5_commodityMall_weChat/static/img/icon17.png",
+				"5_commodityMall_weChat/5400.html",
+				"3_commodityMall_engineering/static/css/bootstrap.css",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-uz-Latn-UZ.js",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-hu-HU.js",
+				"2_commodityMall_marketManager/2360_informApproval.html",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-ar-SA.js",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-af-ZA.js",
+				"5_commodityMall_weChat/src/src/extensions/tree-column/icon.png",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-nl-NL.js",
+				"5_commodityMall_weChat/src/src/extensions/click-edit-row/README.md",
+				"5_commodityMall_weChat/src/src/extensions/multi-column-toggle/bootstrap-table-multi-toggle.js",
+				"5_commodityMall_weChat/src/src/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.js",
+				"2_commodityMall_marketManager/static/img/select.png",
+				"5_commodityMall_weChat/src/src/extensions/group-by-v2/bootstrap-table-group-by.css",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-zh-TW.js",
+				"5_commodityMall_weChat/src/src/extensions/select2-filter/bootstrap-table-select2-filter.js",
+				"5_commodityMall_weChat/src/src/extensions/filter/extension.json",
+				"5_commodityMall_weChat/src/src/extensions/i18n-enhance/extension.json",
+				"2_commodityMall_marketManager/2820_informDetails.html",
+				"5_commodityMall_weChat/src/src/extensions/sticky-header/bootstrap-table-sticky-header.js",
+				"1_commodityMail_marketer/static/js/sj_validate_common.js",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-sv-SE.js",
+				"5_commodityMall_weChat/src/src/extensions/group-by/bootstrap-table-group-by.css",
+				"5_commodityMall_weChat/src/src/extensions/resizable/extension.json",
+				"5_commodityMall_weChat/src/src/extensions/reorder-rows/README.md",
+				"5_commodityMall_weChat/src/src/extensions/reorder-columns/extension.json",
+				"1_commodityMail_marketer/static/js/sj_validate.js",
+				"5_commodityMall_weChat/src/weCaat1.less",
+				"1_commodityMail_marketer/1A00-del.html",
+				"5_commodityMall_weChat/static/img/icon5.png",
+				"2_commodityMall_marketManager/manifest.json",
+				"5_commodityMall_weChat/static/img/icon2_1.png",
+				"js/ajaxUrl.js",
+				"5_commodityMall_weChat/static/js/swiper-3.4.1.min.js",
+				"5_commodityMall_weChat/img/icon10.png",
+				"5_commodityMall_weChat/src/src/extensions/select2-filter/extension.json",
+				"2_commodityMall_marketManager/static/css/style.css",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-tr-TR.js",
+				"5_commodityMall_weChat/static/img/icon14.png",
+				"5_commodityMall_weChat/1",
+				"5_commodityMall_weChat/src/src/extensions/print/README.md",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-hr-HR.js",
+				"5_commodityMall_weChat/img/pic.jpg",
+				"5_commodityMall_weChat/src/src/extensions/resizable/README.md",
+				"5_commodityMall_weChat/src/src/extensions/filter-control/extension.json",
+				"2_commodityMall_marketManager/static/css/bootstrap.css",
+				"5_commodityMall_weChat/src/src/extensions/sticky-header/bootstrap-table-sticky-header.css",
+				"1_commodityMail_marketer/static/js/jquery.mobile-1.4.5.min.js",
+				"editionMsg.txt",
+				"2_commodityMall_marketManager/static/js/bootstrap.js",
+				"1_commodityMail_marketer/OSS-test.html",
+				"5_commodityMall_weChat/src/src/extensions/editable/README.md",
+				"5_commodityMall_weChat/src/src/extensions/reorder-rows/bootstrap-table-reorder-rows.css",
+				"5_commodityMall_weChat/src/src/extensions/reorder-rows/bootstrap-table-reorder-rows.js",
+				"3_commodityMall_engineering/static/img/icon2.png",
+				"5_commodityMall_weChat/static/img/icon8.png",
+				"5_commodityMall_weChat/img/btn_1.png",
+				"5_commodityMall_weChat/src/src/extensions/auto-refresh/bootstrap-table-auto-refresh.css",
+				"5_commodityMall_weChat/src/src/extensions/key-events/extension.json",
+				"5_commodityMall_weChat/src/src/locale/bootstrap-table-ur-PK.js"
+			]
+		}
+	}
+}
